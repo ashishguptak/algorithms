@@ -1,0 +1,60 @@
+- Features of problem
+- define APIs - with clients and Auth
+- Availability
+- Latency/ Performance
+- Scalability
+- Durability
+- Class diagram
+- Security
+- Cost-effective
+
+Distributed Systems Core Concepts
+- Vertical or Horizontal Scaling
+- CAP theorem (Consistency or Availability)
+- ACID vs BASE ( SQL vs NoSQL)
+- Partitioning/ Sharding data using Consistent Hashing
+- SQL Database - transaction Isolation levels
+- Strong vs Eventual Consistency
+- Types of NoSQL -
+        - key-value
+        - wide-column
+        - document-type
+        - graph based
+- Caching - Eviction policies
+    - In-memory
+    - Distributed Cache
+- Distributed locks using ZooKeeper
+- http vs http2 vs WebSockets vs Https (TLS)
+- TCP model and UDP
+- DNS lookup
+- 2-way SSL (PKI and CA)
+- Load balancer -> L4 vs L7
+- CDN
+- Bloom filters and Count-min Sketch
+- Paxos - consensus over distributed host (leader election)
+- VMs and Docker containers
+- Publisher-Subscriber over Queue
+- MapReduce
+- Multi-threading, Concurrency (ExecutorService), locks
+- MultiMaster and Master-Slave
+- Read-and-then-Write in Distributed env (Atomic operations)
+- last-writer-wins trade offs
+
+Tools
+Cassandra
+MongoDB
+Redis
+MySQL
+Memcached
+Zookeeper -centralized configuration tool, scales very well for read but not write
+Kafka
+NGINX/ HAProxy
+ElasticSearch based on Lucene
+S3
+Hadoop/ Spark using HDFS
+
+
+
+Write a web service with
+Advanced Spring features - ScheduledTasks, Hystrix, Kafka, RateLimiter, Guava lib, Mybatis queries, Logging - Sleuth
+Swagger api & fnt tests, Dynamo db/ Mongodb/Cassandra change, Kafka stream, Exception handling, FF4j, Feign Client, Actuator

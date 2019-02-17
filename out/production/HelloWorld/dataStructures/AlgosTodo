@@ -1,0 +1,39 @@
+Trees -
+
+https://www.geeksforgeeks.org/construct-all-possible-bsts-for-keys-1-to-n/
+
+https://www.geeksforgeeks.org/in-place-convert-bst-into-a-min-heap/
+
+https://www.geeksforgeeks.org/convert-bst-min-heap/
+
+https://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/
+
+https://www.geeksforgeeks.org/rank-element-stream/ - Using BST and storing size of left subtree in parent node
+
+https://www.geeksforgeeks.org/select-a-random-number-from-stream-with-o1-space/
+
+https://leetcode.com/discuss/interview-question/124561/Google-Phone-Interview-Question-Round-2/
+
+https://leetcode.com/articles/implement-stack-using-queues/
+
+https://leetcode.com/problems/rearrange-string-k-distance-apart
+
+Bloom filters
+
+https://www.geeksforgeeks.org/print-all-the-cycles-in-an-undirected-graph/
+
+https://www.geeksforgeeks.org/minimum-cost-path-from-source-node-to-destination-node-via-an-intermediate-node/
+
+https://leetcode.com/problems/unique-binary-search-trees-ii/description/
+
+http://blog.gainlo.co/index.php/2016/04/08/if-a-string-contains-an-anagram-of-another-string/
+
+https://leetcode.com/problems/rle-iterator/description/
+
+https://leetcode.com/articles/minimum-number-of-refueling-stops/
+
+Q: Given a tree representing an org chart for a company where each node's value contains that employees fun rating, give me the maximum amount of fun this company can have at a party where there is 1 restriction:
+	1.	If I go to the party, my direct reports can NOT go to the party.
+
+Given a 2d matrix of 0s and 1s, find the list of all 1's by representing top-left and bottom-right or
+top-left and height and width.
