@@ -12,29 +12,43 @@ import java.util.Set;
 
 /**
  * https://leetcode.com/problems/subsets-ii/description/
+ * https://leetcode.com/explore/interview/card/uber/290/recursion-and-backtracking/1689/discuss/122645/3ms-easiest-solution-no-backtracking-no-bit-manipulation-no-dfs-no-bullshit
+ * https://leetcode.com/explore/interview/card/uber/290/recursion-and-backtracking/1689/discuss/27281/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
  * @author ashish gupta (akonda@expedia.com)
  */
 public class Subsets {
 
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
-        Arrays.sort(nums);
-
-        Set<List<Integer>> result = new HashSet<>();
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
         List<Integer> ls = new ArrayList<>();
 
         recurse(result, ls, nums, 0);
+        bfs(nums, result);
+
         return new ArrayList<>(result);
     }
 
-    public void recurse(Set<List<Integer>> result, List<Integer> ls, int[] nums, int i) {
+    private void recurse(List<List<Integer>> result, List<Integer> ls, int[] nums, int i) {
         if(i == nums.length) {
-            result.add(ls);
+            result.add(new ArrayList<>(ls));
             return;
         }
 
-        List<Integer> include = new ArrayList<>(ls);
-        include.add(nums[i]);
+        ls.add(nums[i]);
         recurse(result, ls, nums, i+1);
-        recurse(result, include, nums, i+1);
+        ls.remove(ls.size() -1);
+        recurse(result, ls, nums, i+1);
+    }
+
+    public void bfs(int[] nums, List<List<Integer>> result) {
+        result.add(new ArrayList<>());
+        for(int i: nums) {
+            List<List<Integer>> temp = new ArrayList<>();
+            for(List<Integer> ls : result)
+                temp.add(new ArrayList<>(ls));
+            for(List<Integer> ls : temp)
+                ls.add(i);
+            result.addAll(temp);
+        }
     }
 }

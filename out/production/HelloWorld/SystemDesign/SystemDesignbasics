@@ -51,7 +51,7 @@ Kafka
 NGINX/ HAProxy
 ElasticSearch based on Lucene
 S3
-Hadoop/ Spark suing HDFS
+Hadoop/ Spark using HDFS
 
 
 

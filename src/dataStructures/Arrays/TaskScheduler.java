@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
- *
+ *  https://leetcode.com/articles/task-scheduler/
  * https://leetcode.com/problems/task-scheduler/discuss/104501/Java-PriorityQueue-solution-Similar-problem-Rearrange-string-K-distance-apart
  *
  * @author ashish gupta (akonda@expedia.com)
@@ -83,6 +83,29 @@ public class TaskScheduler {
             Arrays.sort(map);
         }
         return time;
+    }
+
+    public int leastInterval3(char[] tasks, int n) {
+        if(tasks.length <= 1 || n == 0) return tasks.length;
+
+        int[] count = new int[26];
+        for(char ch: tasks)
+            count[ch-'A']++;
+
+        int total = 0;
+        Arrays.sort(count);
+
+        while(count[25] > 0) {
+            for(int i=0; i<=n && count[25] > 0; i++) {
+                total+=1;
+                if(i > 25) continue;
+                if(count[25 - i] > 0) {
+                    count[25 - i]--;
+                }
+            }
+            Arrays.sort(count);
+        }
+        return total;
     }
 
 }

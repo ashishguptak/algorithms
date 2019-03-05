@@ -1,254 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a2cd76e-127b-4c63-8fab-43447ada31cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/ConsoleLogger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Converter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/DefaultMethodClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Fastfly.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Features$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Features.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Fly.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Formula.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/MyRunnableThreadClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Person.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/PersonFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Sail.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Sample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/SeaPlane.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/ThreadTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Java8/Vehicle.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/OOP/ParkingLot$Spot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/OOP/ParkingLot.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/FlattenNestedListIterator$NestedInteger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/FlattenNestedListIterator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/KthSmallestPairDistance.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/LongestConsecutiveSequence.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/LongestMountainInArray.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/MaximumSumAndProductSubArray.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/MinWindownSubString.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/RandomPickWithWeight.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/SlidingWindowMaximum$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/SlidingWindowMaximum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/SlidingWindowMedian.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/AverageFromStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/FirstNonRepeatingCharacterInStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/KthLargestElementInStream.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/TopKFrequentElements$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/TopKFrequentElements$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/Streams/TopKFrequentElements.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/TaskScheduler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/TaskScheduler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Arrays/ThreeSum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Backtracking/SudokuSolver.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/CoinChange.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/LongestCommonSubsequence.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/LongestIncreasingSubsequence.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/MaxSumOfNonAdjacentElements.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/MinEditDistance.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/OptimumBSTSearch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/TextJustification.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/WeightedJobScheduling.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/WildCardMatching.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/DP/WordBreak.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/AlienDictionary$Graph.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/AlienDictionary.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/BipartiteGraph.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/DetectCycles.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/Edge.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/Graph.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/NoOfIslands$GridIndex.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/NoOfIslands.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/TopologicalSorting.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Graph/Vertex.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Map/BloomFilters.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Map/LFUCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Map/LRUCache$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Map/LRUCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Map/MyCalendar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/DdosThrottlingInterceptor$ClientLimiter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/DdosThrottlingInterceptor$Log.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/DdosThrottlingInterceptor$LoggerMapKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/DdosThrottlingInterceptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/DesignTwitter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/MineSweeper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/RateLimiter$ClientLimitMapValue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/RateLimiter$HttpClient.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/RateLimiter$RateLimiterMapValue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/RateLimiter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Other/TicTacToe.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Queue/QueueUsingStacks.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Recursion/Subsets.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Sorting/BucketSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Sorting/CountingSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Sorting/QuickSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Stack/BasicCalculator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Stack/LargestRectangleInHistogram.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Stack/MaxFreqStack.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Stack/StackUsingQueues.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Stack/TrappingRainWater.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Strings/BreakMultipleWordsWithNoSpaceIntoSpace.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Strings/DecodeString.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Strings/RemoveInvalidParenthesis.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Strings/StringContainsAnagramOfAnotherString.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/BSTIterator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/BSTValidate.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/ConstructBST$Codec.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/ConstructBST.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/ConstructBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/DiameterOfBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/FindLeftMostBottomValue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/FlattenLinkedList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/HeightAndWidthOfBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/InOrderIterativeBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/InorderPredecessorinBST.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/IsomorphicTrees.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/LCAOfBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/PostOrderIterativeTraversal.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/SerializeBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/SumOfDistancesInTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/TreeNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/BinaryTree/ViewsOfBinaryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/MaxDepthOfNAryTree$Node.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Tree/MaxDepthOfNAryTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Trie/Trie$TrieNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Trie/Trie.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Trie/Trie_old$TrieNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/Trie/Trie_old.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/matrix/Search2dMatrix.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/matrix/Search2dMatrixII.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/adaptor/App.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/adaptor/Captain.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/adaptor/FishingBoat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/adaptor/FishingBoatAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/adaptor/RowingBoat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/App.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/BlackSmith.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/ElfSmith.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/ElfWeapon.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/OrcsBlackSmith.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/OrcsWeapon.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/Weapon.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/designpatterns/factorymethod/WeaponType.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dom/ContentNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dom/DomTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dom/TagNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dom/XMLParser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/MyProject/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/description.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloWorld.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyProject.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/SystemDesign/Questions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/SystemDesign/SystemDesignbasics" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HelloWorld/dataStructures/AlgosTodo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java8/DefaultMethodClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java8/Features.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java8/MyRunnableThreadClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java8/Sample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OOP/ParkingLot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SystemDesign/Questions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SystemDesign/SystemDesignbasics" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/AlgosTodo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/FlattenNestedListIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/KthSmallestPairDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/LongestConsecutiveSequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/LongestMountainInArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/MaximumSumAndProductSubArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/MinWindownSubString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/RandomPickWithWeight.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMaximum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMedian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/AverageFromStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/FirstNonRepeatingCharacterInStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/KthLargestElementInStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/ThreeSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Backtracking/SudokuSolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/CoinChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/LongestCommonSubsequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/LongestIncreasingSubsequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/MaxSumOfNonAdjacentElements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/MinEditDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/OptimumBSTSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/TextJustification.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/WeightedJobScheduling.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/WildCardMatching.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/DP/WordBreak.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/AlienDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/BipartiteGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/DetectCycles.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/Graph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/TopologicalSorting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Map/BloomFilters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Map/LFUCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Map/LRUCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Map/MyCalendar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/DdosThrottlingInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/DesignTwitter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/MineSweeper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/RateLimiter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Queue/QueueUsingStacks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Sorting/BucketSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Sorting/CountingSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Sorting/QuickSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/BasicCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/LargestRectangleInHistogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/MaxFreqStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/StackUsingQueues.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Stack/TrappingRainWater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/BreakMultipleWordsWithNoSpaceIntoSpace.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/DecodeString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/RemoveInvalidParenthesis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/StringContainsAnagramOfAnotherString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/BSTIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/BSTValidate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ConstructBST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ConstructBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/DiameterOfBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/FindLeftMostBottomValue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/FlattenLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/HeightAndWidthOfBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/InOrderIterativeBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/InorderPredecessorinBST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/IsomorphicTrees.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/LCAOfBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/PostOrderIterativeTraversal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/SerializeBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/SumOfDistancesInTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/TreeNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ViewsOfBinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Tree/MaxDepthOfNAryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Trie/Trie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Trie/Trie_old.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/matrix/Search2dMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/matrix/Search2dMatrixII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/adaptor/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/adaptor/Captain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/adaptor/FishingBoat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/adaptor/FishingBoatAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/adaptor/RowingBoat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/BlackSmith.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/ElfSmith.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/ElfWeapon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/OrcsBlackSmith.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/OrcsWeapon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/Weapon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/designpatterns/factorymethod/WeaponType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dom/DomTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dom/XMLParser.java" />
+    <list default="true" id="3a2cd76e-127b-4c63-8fab-43447ada31cd" name="Default" comment="Initial Commit for Dev project">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SystemDesign/HitCounter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/NumberOfIslandsII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/LinkedList/MergeKSortedLists.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/MergeIntervals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Other/SolveLinearEquation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/RearrangeLettersKDistanceApart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dataStructures/Strings/ValidateIPAddress.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HelloWorld/SystemDesign/SystemDesignbasics" afterPath="$PROJECT_DIR$/out/production/HelloWorld/SystemDesign/SystemDesignbasics" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java" afterPath="$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java" afterPath="$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java" afterPath="$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java" afterPath="$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -267,101 +34,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InorderPredecessorinBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/InorderPredecessorinBST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ConstructBST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemDesignbasics" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SystemDesign/SystemDesignbasics">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Questions" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SystemDesign/Questions">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DesignTwitter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/DesignTwitter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Stack/BasicCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlattenNestedListIterator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/FlattenNestedListIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountingSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Sorting/CountingSort.java">
+      <file leaf-file-name="RearrangeLettersKDistanceApart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/RearrangeLettersKDistanceApart.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InOrderIterativeBinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/InOrderIterativeBinaryTree.java">
+      <file leaf-file-name="HitCounter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SystemDesign/HitCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="275">
+              <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1672#1673#0" expanded="true" />
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateIPAddress.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/ValidateIPAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subsets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeIntervals.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/MergeIntervals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoOfIslands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberOfIslandsII.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Graph/NumberOfIslandsII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/Stack/BasicCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextJustification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataStructures/DP/TextJustification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -388,6 +153,9 @@
       <find>head</find>
       <find>eldest</find>
       <find>entry</find>
+      <find>array</find>
+      <find>remove</find>
+      <find>comparing</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -404,19 +172,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/FlattenLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Graph/BipartiteGrpah.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Graph/BipartiteGraph.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/DP/LongestIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/LongestMountainInArray.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/TrappingRainWater.java" />
-        <option value="$PROJECT_DIR$/src/Java8/MyRunnableThreadClass.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Todo" />
         <option value="$PROJECT_DIR$/src/dataStructures/Strings/RemoveInvalidParenthesis.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Stack/TrappingRainWater.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/LinkedList/ReverseLinkedList.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Arrays/KthSmallestPairDistance.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Arrays/ThreeSum.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/FindLeftMostBottomValue.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Arrays/LongestConsecutiveSequence.java" />
@@ -442,9 +202,7 @@
         <option value="$PROJECT_DIR$/src/dataStructures/Other/Subsets.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Other/LRUCache.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Other/LFUCache.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Arrays/RandomPickWithWeight.java" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ViewsOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Other/MyCalendar.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ConstructBST.java" />
@@ -453,8 +211,18 @@
         <option value="$PROJECT_DIR$/src/dataStructures/Trie/Trie.java" />
         <option value="$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/CheckCompleteBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/SystemDesign/Questions" />
-        <option value="$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/SystemDesign/SystemDesignbasics" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/LinkedList/MergeKSortedLists.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Other/SolveLinearEquation.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java" />
+        <option value="$PROJECT_DIR$/src/SystemDesign/HitCounter.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Strings/ValidateIPAddress.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Other/MergeIntervals.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java" />
+        <option value="$PROJECT_DIR$/src/dataStructures/Graph/NumberOfIslandsII.java" />
       </list>
     </option>
   </component>
@@ -471,9 +239,11 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="807" />
+    <option name="height" value="805" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -489,7 +259,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -517,6 +289,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SystemDesign" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -834,6 +624,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="LinkedList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -906,8 +718,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -918,7 +728,9 @@
     <property name="findjar.last.used.dir" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.expedia.payments.task.scheduler/scheduler-client/1.1.2/a6635f933d97fdab871f56c10d68cd0e6832cff5" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="top&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Arrays/Streams/TopKFrequentElements.java&#10;hashcode&#9;ACTION&#9;defaultLombokEqualsAndHashcode" />
+    <property name="SearchEverywhereHistoryKey" value="inval&#9;PSI&#9;JAVA://dataStructures.Strings.RemoveInvalidParenthesis&#10;ca&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Stack/BasicCalculator.java&#10;isla&#9;PSI&#9;JAVA://dataStructures.Graph.NoOfIslands&#10;merge&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Other/MergeIntervals.java&#10;subs&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Recursion/Subsets.java&#10;tasks&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Arrays/TaskScheduler.java&#10;tic&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Other/TicTacToe.java&#10;comparator&#9;PSI&#9;JAVA://java.util.Comparator&#10;top&#9;FILE&#9;file:///Users/akonda/MyProject/src/dataStructures/Arrays/Streams/TopKFrequentElements.java&#10;trie&#9;PSI&#9;JAVA://dataStructures.Trie.Trie_old&#10;hashcode&#9;ACTION&#9;defaultLombokEqualsAndHashcode" />
+    <property name="TF_FMT" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -928,7 +740,7 @@
       <recent name="$PROJECT_DIR$/src/dataStructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
+  <component name="RunManager" selected="Application.Trie_old">
     <configuration default="false" name="ConstructBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -937,26 +749,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dataStructures.Tree.BinaryTree.ConstructBST" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HelloWorld" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="BSTValidate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dataStructures.Tree.BinaryTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dataStructures.Tree.BinaryTree.BSTValidate" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1017,6 +809,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dataStructures.Other.TicTacToe" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HelloWorld" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Trie_old" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dataStructures.Trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="dataStructures.Trie.Trie_old" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1126,6 +938,16 @@
       <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -1517,18 +1339,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ConstructBST" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BSTValidate" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaxFreqStack" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AverageFromStream" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TicTacToe" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MaxFreqStack" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AverageFromStream" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TicTacToe" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Trie_old" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TicTacToe" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ConstructBST" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AverageFromStream" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MaxFreqStack" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BSTValidate" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Trie_old" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TicTacToe" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ConstructBST" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AverageFromStream" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MaxFreqStack" />
       </list>
     </recent_temporary>
   </component>
@@ -1609,15 +1431,28 @@
       <workItem from="1546454942684" duration="40000" />
       <workItem from="1546464866696" duration="641000" />
       <workItem from="1550109393918" duration="596000" />
-      <workItem from="1550428965173" duration="117000" />
+      <workItem from="1550428965173" duration="1154000" />
+      <workItem from="1550544196463" duration="317000" />
+      <workItem from="1550624256423" duration="737000" />
+      <workItem from="1550713518715" duration="1475000" />
+      <workItem from="1550962253936" duration="783000" />
+      <workItem from="1551559376169" duration="11580000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit for Dev project">
+      <created>1550429135287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550429135287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226948000" />
+    <option name="totallyTimeSpent" value="242877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1626,15 +1461,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27825466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3973799" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1642,12 +1479,10 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39825583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270349" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1657,6 +1492,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit for Dev project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit for Dev project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1730,160 +1569,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/RemoveInvalidParenthesis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ConstructBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/BSTValidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/DP/WordBreak.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/DP/LongestCommonSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/LCAOfBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/MineSweeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/DdosThrottlingInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="101" column="59" lean-forward="true" selection-start-line="101" selection-start-column="59" selection-end-line="101" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="507" column="22" lean-forward="false" selection-start-line="507" selection-start-column="22" selection-end-line="507" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Map/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/Subsets.java" />
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/AlgosTodo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/KthSmallestPairDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/LongestConsecutiveSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/LongestMountainInArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/MaximumSumAndProductSubArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Backtracking/SudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1620">
-          <caret line="386" column="24" lean-forward="true" selection-start-line="386" selection-start-column="24" selection-end-line="386" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="652" column="11" lean-forward="false" selection-start-line="652" selection-start-column="11" selection-end-line="652" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/MinWindownSubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1912,13 +1601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMedian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/ViewsOfBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1926,31 +1608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMaximum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/RandomPickWithWeight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1989,20 +1650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Trie/Trie_old.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Trie/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Sorting/BucketSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -2011,11 +1658,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/CheckCompleteBinaryTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/SystemDesign/SystemDesignbasics">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Tree/BinaryTree/InorderPredecessorinBST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2023,39 +1676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SystemDesign/Questions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Stack/BasicCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/FlattenNestedListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataStructures/Sorting/CountingSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2063,30 +1683,334 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/MaximumSumAndProductSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/MinWindownSubString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SystemDesign/Questions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/KthSmallestPairDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/LongestConsecutiveSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/DesignTwitter.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Sorting/CountingSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMedian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/SlidingWindowMaximum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1685#1686#0" expanded="false" />
+            <element signature="e#1727#1728#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/LongestMountainInArray.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Graph/AlienDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="148" column="28" lean-forward="false" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4677#4678#0" expanded="false" />
+            <element signature="e#4715#4716#0" expanded="false" />
+            <element signature="e#5183#5184#0" expanded="false" />
+            <element signature="e#5224#5225#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Trie/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#350#351#0" expanded="false" />
+            <element signature="e#1592#1593#0" expanded="false" />
+            <element signature="e#1640#1641#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Trie/Trie_old.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="109" column="33" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/FlattenNestedListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="29" column="51" lean-forward="false" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1217#1218#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1311#1312#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/DP/CoinChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="496" column="35" lean-forward="false" selection-start-line="496" selection-start-column="30" selection-end-line="496" selection-end-column="35" />
+          <folding>
+            <element signature="e#6252#6253#0" expanded="false" />
+            <element signature="e#6320#6321#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/Streams/TopKFrequentElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="47" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="35" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1398#1399#0" expanded="false" />
+            <element signature="e#1448#1449#0" expanded="false" />
+            <marker date="1551590522000" expanded="true" signature="5099:6103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1255">
+          <caret line="414" column="33" lean-forward="false" selection-start-line="414" selection-start-column="33" selection-end-line="414" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/LinkedList/MergeKSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="67" lean-forward="true" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+          <folding>
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/SolveLinearEquation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="165">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="179" column="19" lean-forward="false" selection-start-line="179" selection-start-column="19" selection-end-line="179" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SystemDesign/SystemDesignbasics">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="219">
+          <caret line="359" column="25" lean-forward="false" selection-start-line="359" selection-start-column="25" selection-end-line="359" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Arrays/TaskScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/RearrangeLettersKDistanceApart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SystemDesign/HitCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/ValidateIPAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Recursion/Subsets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Other/MergeIntervals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Graph/NoOfIslands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Graph/NumberOfIslandsII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/DP/TextJustification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Strings/RemoveInvalidParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataStructures/Stack/BasicCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding />
         </state>
       </provider>

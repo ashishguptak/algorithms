@@ -110,27 +110,29 @@ public class TopKFrequentElements {
     }
 
     //use treeMap. Use freqncy as the key so we can get all freqencies in order
-    public List<Integer> topKFrequent3(int[] nums, int k) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int n : nums) {
-            map.put(n, map.getOrDefault(n, 0) + 1);
+    public List<String> topKFrequent3(String[] words, int k) {
+        Map<String, Integer> map = new HashMap<>();
+        List<String> result = new ArrayList<>();
+        TreeMap<Integer, List<String>> tree = new TreeMap<>();
+
+        for(String str: words)
+            map.put(str, map.getOrDefault(str, 0) + 1);
+
+        for(Map.Entry<String, Integer> entry: map.entrySet()) {
+            if(!tree.containsKey(entry.getValue()))
+                tree.put(entry.getValue(), new ArrayList<>());
+            tree.get(entry.getValue()).add(entry.getKey());
         }
 
-        TreeMap<Integer, List<Integer>> freqMap = new TreeMap<>();
-        for (int num : map.keySet()) {
-            int freq = map.get(num);
-            if (!freqMap.containsKey(freq)) {
-                freqMap.put(freq, new LinkedList<>());
-            }
-            freqMap.get(freq).add(num);
+        int max = tree.lastKey();
+        while(k - result.size() > 0) {
+            List<String> ls = tree.floorEntry(max).getValue();
+            max = tree.floorEntry(max).getKey() - 1;
+            Collections.sort(ls);
+            result.addAll(ls.subList(0, Math.min(k - result.size(), ls.size())));
         }
 
-        List<Integer> res = new ArrayList<>();
-        while (res.size() < k) {
-            Map.Entry<Integer, List<Integer>> entry = freqMap.pollLastEntry();
-            res.addAll(entry.getValue());
-        }
-        return res;
+        return result;
     }
 
 
@@ -162,7 +164,8 @@ public class TopKFrequentElements {
         return result;
     }
 
-    //use Bucket Sorting tech for Stream soln
+    //use Bucket Sorting tech for Stream soln,
+    // use TreeSet for sorted output of strings in each bucket
     public List<Integer> topKFrequent5(int[] nums, int k) {
         int val=0;
 
@@ -187,7 +190,7 @@ public class TopKFrequentElements {
         }
 
         List<Integer> result = new ArrayList<>();
-
+        //wrong logic
         for(int j = buckets.length -1 ; j >=0 && result.size() < k ; j--) {
             if(buckets[j] == null) continue;
 
@@ -199,8 +202,6 @@ public class TopKFrequentElements {
 
     public List<String> topKFrequent(String[] words, int k) {
         if(words.length == 0) return new ArrayList<>();
-        List<String> result = new ArrayList<>();
-
         Map<String, Integer> wordMap = new HashMap<>();
         for(String word : words)
             wordMap.put(word, wordMap.getOrDefault(word, 0) +1);
@@ -223,7 +224,7 @@ public class TopKFrequentElements {
             k = k - temp.size();
         }
         */
-        result = new LinkedList<>();
+        List<String> result = new LinkedList<>();
         /*
         Queue<Map.Entry<String, Integer>> heap = new PriorityQueue<>(new Comparator<Map.Entry<String, Integer>>() {
             @Override
@@ -242,10 +243,12 @@ public class TopKFrequentElements {
                 heap.poll();
         }
 
-        while(!heap.isEmpty()) {
-            result.add(0, heap.poll().getKey());
-        }
+        while(!heap.isEmpty())
+            result.add(heap.poll().getKey());
+
+        Collections.reverse(result);
 
         return result;
     }
+
 }

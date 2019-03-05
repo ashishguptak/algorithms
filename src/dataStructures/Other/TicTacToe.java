@@ -8,8 +8,8 @@ package dataStructures.Other;
  * @author ashish gupta (akonda@expedia.com)
  */
 class TicTacToe {
-    int[][] board;
-    //int count = 0;
+    private int[][] board;
+
     /** Initialize your data structure here. */
     public TicTacToe(int n) {
         board = new int[n][n];
