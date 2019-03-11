@@ -37,3 +37,9 @@ Q: Given a tree representing an org chart for a company where each node's value 
 
 Given a 2d matrix of 0s and 1s, find the list of all 1's by representing top-left and bottom-right or
 top-left and height and width.
+
+Reservoir Sampling
+
+Sort by values in HashMap
+https://www.geeksforgeeks.org/sorting-a-hashmap-according-to-values/
+http://pragmaticnotes.com/2017/08/10/benchmarking-approaches-to-sort-java-map-by-value/

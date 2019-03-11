@@ -5,64 +5,59 @@
 package dataStructures.Trie;
 
 /**
+ * https://leetcode.com/articles/implement-trie-prefix-tree/
+ *
  * @author ashish gupta (akonda@expedia.com)
  */
 class Trie {
 
     /** Initialize your data structure here. */
     TrieNode root;
+    /** Initialize your data structure here. */
     public Trie() {
-        root = new TrieNode();
+        root = new TrieNode('0');
     }
 
     /** Inserts a word into the trie. */
     public void insert(String word) {
-        //if(word.isEmpty()) return;
-
         TrieNode temp = root;
         for(char ch: word.toCharArray()) {
-            if(temp.child[ch-'a'] == null)
-                temp.child[ch-'a'] = new TrieNode();
-
-            temp = temp.child[ch-'a'];
+            if(temp.children[ch-'a'] == null)
+                temp.children[ch-'a'] = new TrieNode(ch);
+            temp = temp.children[ch-'a'];
         }
         temp.isLeaf = true;
     }
 
     /** Returns if the word is in the trie. */
     public boolean search(String word) {
-        //if(word.isEmpty()) return false;
-
         TrieNode temp = root;
         for(char ch: word.toCharArray()) {
-            if(temp.child[ch-'a'] == null)
-                return false;
-            temp = temp.child[ch-'a'];
+            if(temp.children[ch-'a'] == null) return false;
+            temp = temp.children[ch-'a'];
         }
-
         return temp.isLeaf;
     }
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
     public boolean startsWith(String prefix) {
-        //if(prefix.isEmpty()) return false;
-
         TrieNode temp = root;
         for(char ch: prefix.toCharArray()) {
-            if(temp.child[ch-'a'] == null)
-                return false;
-            temp = temp.child[ch-'a'];
+            if(temp.children[ch-'a'] == null) return false;
+            temp = temp.children[ch-'a'];
         }
-
         return true;
     }
 
     class TrieNode {
-        boolean isLeaf = false;
-        TrieNode[] child;
+        char letter;
+        TrieNode[] children;
+        boolean isLeaf;
 
-        TrieNode() {
-            child = new TrieNode[26];
+        public TrieNode(char letter) {
+            this.letter = letter;
+            this.children = new TrieNode[26];
+            this.isLeaf = false;
         }
     }
 }

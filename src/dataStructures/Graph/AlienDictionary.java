@@ -57,6 +57,12 @@ import java.util.Set;
  If the order is invalid, return an empty string.
  There may be multiple valid order of letters, return any one of them is fine.
  *
+ *
+ *
+ *
+ *
+ * https://leetcode.com/problems/alien-dictionary/discuss/70119/Java-AC-solution-using-BFS
+ *
  */
 public class AlienDictionary {
 
@@ -144,7 +150,7 @@ public class AlienDictionary {
         String[] words1 = {"zy", "zx"};
         String[] words = {"wrt", "wrf", "er", "ett", "rftt"};
         String[] words2 = {"wrtkj", "wrt"};
-        String[] words3 = { "z","x","z"};
+        String[] words3 = { "z","z"};
         String result = ad.alienOrder(words3);
         if(result.isEmpty())
             System.out.print( "invalid i/p");
@@ -191,6 +197,69 @@ public class AlienDictionary {
             }
             return true;
         }
+    }
+
+
+
+    //latest soln
+    Map<Character, List<Character>> map;
+    StringBuilder output;
+
+    public String alienOrder2(String[] words) {
+        map = new HashMap<>();
+        output = new StringBuilder("");
+
+        for(String word: words)
+            for(Character ch: word.toCharArray())
+                if(!map.containsKey(ch))
+                    map.put(ch, new ArrayList<>());
+
+        for(int i=1; i< words.length; i++) {
+            String result = findDiff(words[i-1], words[i]);
+            if(!result.isEmpty())
+                map.get(result.charAt(0)).add(result.charAt(1));
+        }
+
+        return topologicalSort();
+    }
+
+    private String topologicalSort() {
+        Set<Character> visited = new HashSet<>();
+        Set<Character> cycle = new HashSet<>();
+
+        for(Character entry: map.keySet())
+            if(dfs(entry, visited, cycle)) return "";
+
+        return output.toString();
+    }
+
+    private boolean dfs(Character entry, Set<Character> visited, Set<Character> cycle) {
+        if(cycle.contains(entry)) return true;
+        if(visited.contains(entry)) return false;
+
+        visited.add(entry);
+        cycle.add(entry);
+
+        if(map.containsKey(entry))
+            for(Character edge: map.get(entry))
+                if(dfs(edge, visited, cycle)) return true;
+
+        output.insert(0, entry);
+        cycle.remove(entry);
+        return false;
+    }
+
+    private String findDiff2(String a, String b) {
+        String result ="";
+        int i=0;
+        while(i < Math.min(a.length(), b .length())) {
+            if(a.charAt(i) != b.charAt(i)) break;
+            i++;
+        }
+
+        if(i < Math.min(a.length(), b .length()))
+            result = String.valueOf(a.charAt(i)) + String.valueOf(b.charAt(i));
+        return result;
     }
 
 }

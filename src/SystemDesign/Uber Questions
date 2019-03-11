@@ -1,0 +1,11 @@
+1. System design - Google Search AutoComplete
+2. Coding- Give a very big list of number of colors(not fit for memory). Write function that randomly show color based on percentage of color
+3. in old miner game, based on given size n, auto created a miner board. following show all adjacent zero cell if one cell is zero
+
+Implement RateLimiting algorithm
+Stock Trading System
+Given output X write a program to produce said output given an environment of Y
+Given a stream of events, bucket them into buckets of a given time window (phone screen).
+Also had a derivative of the TwoSum question and a Knapsack problem in disguise as something else.
+
+Describe a project you worked on that you are not proud of.

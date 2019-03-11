@@ -40,7 +40,7 @@ public class Subsets {
         recurse(result, ls, nums, i+1);
     }
 
-    public void bfs(int[] nums, List<List<Integer>> result) {
+    private void bfs(int[] nums, List<List<Integer>> result) {
         result.add(new ArrayList<>());
         for(int i: nums) {
             List<List<Integer>> temp = new ArrayList<>();

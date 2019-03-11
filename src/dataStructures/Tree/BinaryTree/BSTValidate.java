@@ -4,6 +4,8 @@
  */
 package dataStructures.Tree.BinaryTree;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.List;
 
 /**
@@ -36,6 +38,28 @@ public class BSTValidate {
         flag = flag && inorder2(root.right, list);
 
         return flag;
+    }
+
+    private boolean validateBST2(TreeNode root) {
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        long curr = (long)Integer.MIN_VALUE -1;
+        TreeNode temp = root;
+
+        while(!stack.isEmpty() || temp != null) {
+            if (temp != null) {
+                stack.push(temp);
+                while (temp.left != null) {
+                    stack.push(temp.left);
+                    temp = temp.left;
+                }
+            }
+            temp = stack.pop();
+            //System.out.println(temp.val);
+            if (curr >= temp.val) return false;
+            curr = temp.val;
+            temp = temp.right;
+        }
+        return true;
     }
 
     public static void main(String[] args) {
