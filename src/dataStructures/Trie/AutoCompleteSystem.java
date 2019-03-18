@@ -83,7 +83,7 @@ public class AutoCompleteSystem {
             Map<String, Integer> map;
             boolean isLeaf;
 
-            public TrieNode(char ch) {
+            private TrieNode(char ch) {
                 this.val = ch;
                 this.children = new TrieNode[27];
                 map = new HashMap<>();

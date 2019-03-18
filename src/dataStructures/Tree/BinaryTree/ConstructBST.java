@@ -24,9 +24,8 @@ public class ConstructBST {
         TreeNode root = new TreeNode(pre[start]);
 
         int k = start+1;
-        while( k <= end && pre[k] <= pre[start]) {
+        while( k <= end && pre[k] <= pre[start])
             k++;
-        }
 
         root.left = recurse(pre, start+1, k-1);
         root.right = recurse(pre, k, end);
@@ -38,40 +37,23 @@ public class ConstructBST {
         if(pre.length == 0) return null;
 
         TreeNode root = new TreeNode(pre[0]);
-        for(int i=1; i< pre.length; i++) {
+        for(int i=1; i< pre.length; i++)
             insertIntoBST(root, pre[i]);
-        }
-
         return root;
     }
 
-    private TreeNode insertIntoBST(TreeNode root, int val) {
-        TreeNode temp = root;
-        if(root == null) {
-            root = new TreeNode(val);
-            return root;
+    private void insertIntoBST(TreeNode root, int val) {
+        TreeNode curr = root, parent = root;
+
+        while( curr != null) {
+            parent = curr;
+            curr = curr.val < val ? curr.right : curr.left;
         }
 
-        while(true) {
-            if(temp.val < val) {
-                if(temp.right == null) {
-                    temp.right = new TreeNode(val);
-                    break;
-                }
-                else
-                    temp = temp.right;
-            }
-            else{
-                if(temp.left == null) {
-                    temp.left = new TreeNode(val);
-                    break;
-                }
-                else
-                    temp = temp.left;
-            }
-        }
-
-        return root;
+        if(parent.val < val)
+            parent.right = new TreeNode(val);
+        else
+            parent.left = new TreeNode(val);
     }
 
 
@@ -119,12 +101,6 @@ public class ConstructBST {
 
             String[] vals = data.split(" ");
             return buildBST(vals, 0, vals.length-1);
-        /*
-        TreeNode root = new TreeNode(Integer.parseInt(vals[0]));
-        for(int i = 1; i < vals.length; i++)
-            insert(root, Integer.parseInt(vals[i]));
-        return root;
-        */
         }
 
         private TreeNode buildBST(String[] vals, int i, int j) {
@@ -150,7 +126,7 @@ public class ConstructBST {
         }
 
         private void insert(TreeNode root, int val) {
-            TreeNode curr = root, parent = null;
+            TreeNode curr = root, parent = root;
 
             while( curr != null) {
                 parent = curr;

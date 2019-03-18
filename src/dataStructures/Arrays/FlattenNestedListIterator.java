@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * https://leetcode.com/problems/flatten-nested-list-iterator/description/
  *
+ * https://leetcode.com/problems/flatten-nested-list-iterator/discuss/80147/Simple-Java-solution-using-a-stack-with-explanation
  * //other impl using Stack by iterating through NL in reverse order
  * how to implement remove() method
  * @author ashish gupta (akonda@expedia.com)
