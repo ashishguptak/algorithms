@@ -48,3 +48,14 @@ DynamoDb working
 Snake Game
 
 stock trading system design
+
+Q: Given a tree representing an org chart for a company where each node's value
+contains that employees fun rating, give me the maximum amount of fun this company can have
+at a party where there is 1 restriction:
+	1.	If I go to the party, my direct reports can NOT go to the party.
+
+          2
+        4    5
+      3   3    6
+    7  5      6    7
+  -3  4  6  8   0    9
