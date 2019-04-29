@@ -80,7 +80,7 @@ public class MaximumValueFromFloatNumbers {
 
     public static void main(String[] args) {
         MaximumValueFromFloatNumbers mf = new MaximumValueFromFloatNumbers();
-        float[] nums = {0, 1, 12};
+        float[] nums = {1.2f, 3.7f, -5.2f};
         char[] operators = new char[]{'+', '-', '*', '/'};
         mf.findMaxRecurse2(nums,1, nums[0]);
         System.out.println("new algo "  + mf.maxValue);

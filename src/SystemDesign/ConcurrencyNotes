@@ -1,0 +1,5 @@
+Concurrency models are of two types -
+Blocking algorithms
+Non-blocking algorithms - that allow threads to access the shared resources state without blocking the threads involved - suspension of one thread will not lead to suspension of other threads involved in algorithm
+
+Blocking Algos-
