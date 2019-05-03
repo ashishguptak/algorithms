@@ -61,7 +61,16 @@ public class ProcessingMetric {
         ProcessingMetric processingMetric = new ProcessingMetric();
         Random random = new Random();
         ExecutorService executorService = Executors.newFixedThreadPool(3);
-        //for(int k = 0; k < 10; k ++) {
+        //ExecutorService executorService = Executors.newFixedThreadPool(3, new CustomizableThreadFactory())
+        String parent = Thread.currentThread().getName();
+        System.out.println("parent name " + parent);
+        executorService.execute(() -> {
+            String name = Thread.currentThread().getName();
+            System.out.println(name);
+            Thread.currentThread().setName(parent);
+        });
+
+        for(int k = 0; k < 10; k ++) {
             for (int i = 0; i < 10; i++) {
                 executorService.execute(() -> {
                     for (int j=0; j< 10; j ++) {
@@ -78,7 +87,7 @@ public class ProcessingMetric {
             System.out.println(processingMetric);
             Assert.assertEquals(processingMetric.getProcessedCount(),
                     processingMetric.getFailureCount() + processingMetric.getSuccessCount());
-        //}
+        }
     }
 
     @Override

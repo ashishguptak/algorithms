@@ -11,6 +11,8 @@ import java.util.TreeMap;
 
 /**
  * https://leetcode.com/problems/design-hit-counter/description/
+ * http://www.cs.umd.edu/class/fall2013/cmsc433/examples/wordcount/WordCountParallel.java
+ * http://blog.gainlo.co/index.php/2016/09/12/dropbox-interview-design-hit-counter/
  *
  * @author ashish gupta (akonda@expedia.com)
  */

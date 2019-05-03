@@ -26,10 +26,11 @@ import java.util.TreeMap;
  *
  * https://zpjiang.me/2017/11/13/top-k-elementes-system-design/
  *
+ * https://leetcode.com/problems/top-k-frequent-words/discuss/108399/Java-O(n)-solution-using-HashMap-BucketSort-and-Trie-22ms-Beat-81
+ *
  * @author ashish gupta (akonda@expedia.com)
  */
 public class TopKFrequentElements {
-
 
     // How not to code
     public List<Integer> topKFrequent(int[] nums, int k) {
@@ -251,4 +252,78 @@ public class TopKFrequentElements {
         return result;
     }
 
+    class Solution {
+        public List<String> topKFrequent(String[] words, int k) {
+            Map<String, Integer> map = new HashMap<>();
+            for(String each: words)
+                map.put(each, map.getOrDefault(each, 0) + 1);
+
+            List<String> result = new ArrayList<>();
+
+            List<String>[] freq = new List[words.length+1];
+            for(Map.Entry<String, Integer> entry: map.entrySet()) {
+                if(freq[entry.getValue()] == null)
+                    freq[entry.getValue()] = new ArrayList<>();
+                freq[entry.getValue()].add(entry.getKey());
+            }
+
+            for(int i= freq.length-1; i>0 && k>0; i--) {
+                if(freq[i] == null) continue;
+                Collections.sort(freq[i]);
+                result.addAll(freq[i].subList(0, Math.min(k, freq[i].size())));
+                k -= Math.min(k, freq[i].size());
+            }
+
+        /*
+        PriorityQueue<Map.Entry<String, Integer>> heap = new PriorityQueue<>(
+        (a, b) ->  a.getValue() == b.getValue() ? b.getKey().compareTo(a.getKey()) :
+         a.getValue() - b.getValue());
+
+        for(Map.Entry<String, Integer> entry: map.entrySet()){
+            heap.offer(entry);
+            if(heap.size() > k)
+                heap.poll();
+        }
+
+        while(!heap.isEmpty())
+            result.add(heap.poll().getKey());
+
+        Collections.reverse(result);
+        */
+
+            return result;
+        }
+    }
+
+/**
+
+ Bucket Sort where for each freq balue we store the list of integers associated in it.
+ and then traverse in reverse order to check if any strings are available for that freq
+ sort the strgins
+ add to result
+
+ max O(n log K) - useful for uniformly distributed dataset
+ and also if the list is growing, streaming based
+ in that case we can maintain all the existing freq and then only update the needed one
+ each freq- Set<sTring?> O(1) retrval and delete
+ O(nlogn)
+
+ map the count for each word to its freq - HashMap
+ map<K,V> pair and there is no inherent ordering
+
+ heap in which the comparator and evaluate based on their count first and then if they aer equal
+ based on reverse lexical order
+ create heap of size k and maintain the same size when adding elements by polling from the heap
+ min heap, min element
+
+ list. reverse it
+
+ sunny, day, is the
+
+ the, is , day, sunny
+
+ O(n) memory
+
+ O(n * log K) time
+ **/
 }
