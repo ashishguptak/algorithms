@@ -16,6 +16,8 @@ import java.util.concurrent.atomic.AtomicReference;
  * https://github.com/mission-peace/interview/blob/master/src/com/interview/multithreaded/RealTimeCounter.java
  *
  *
+ *  http://blog.gainlo.co/index.php/2016/09/12/dropbox-interview-design-hit-counter/
+ *
  * Develop a software to count number of events in last 5 mins. You have to support two apis
  * 1) addEvent() -> It means increment event by 1
  * 2) getTotalEvents() -> Return total number of events in last 5 mins

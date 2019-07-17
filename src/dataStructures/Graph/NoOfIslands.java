@@ -1,5 +1,34 @@
 package dataStructures.Graph;
 /**
+ *
+ * island formation - connecting adj lands horizontally or vertically
+ *
+ * edges of grid are water
+ *
+ * 2d matrix
+ *
+ * Treat the grid as a adj matrix representation of nodes,
+ * undirected/unwieghted graph, with an edge between two nodes expressed as 1
+ * while linear scan, we encounter a 1 it becomes the root node for DFS search and mark #times root node was found
+ * one approach is to traverse the matrix row/col wise and first time we encounter a land,
+ * mark it as visited and then recurse helper func in all directions till the lands connected are visited.
+ *
+ * Start with one node and exhaust all the connected nodes wrt to it, DFS approach for adj matrix
+ *
+ * Increment the island global/class variable count by 1
+ *
+ * Continue the matrix traversal till end of the matrix.
+ *
+ * Time complexity - O(n*m)
+ * Space complexity - O(n*m) recursive stack depth
+ *
+ *
+ *
+ * BFS approach
+ * Linear scan the matrix and first time we encounter an island,
+ * iteratively search the neighbors until the queue becomes empty
+ *
+ *
  * @author ashish gupta (akonda@expedia.com)
  */
 public class NoOfIslands {

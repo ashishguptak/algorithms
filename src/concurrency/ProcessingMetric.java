@@ -4,7 +4,7 @@
  */
 package concurrency;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;

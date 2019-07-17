@@ -26,6 +26,10 @@ Pinterest has access to a large volume of 'pins' say of the order of 10 million.
 Each pin has an associated 'score id' which is constantly updated as users 'like' the pin.
 Explain the run time complexity and memory requirements of the architecture.
 
+http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/
+
+http://blog.gainlo.co/index.php/2016/09/12/dropbox-interview-design-hit-counter/
+
 Google docs design
 
 OOD -
