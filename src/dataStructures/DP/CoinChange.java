@@ -14,6 +14,18 @@ import java.util.Map;
  * @author ashish gupta (akonda@expedia.com)
  */
 public class CoinChange {
+    /*
+    Sort the Array
+
+Fewest coins can be achieved by starting with the largest element in array and checking for all combinations of other coins till target value is reached such that global min is minimized.
+
+a trivial solution is to enumerate all subsets of coin freq that satisyfy the constraints, comput etheri sums and return the min among them.
+
+More like a Recursive function to find the target value
+     - iteraively check for lower denomination values for every combination of higher order denominations values till minCoins is achieved or target < 0 to end recursion
+
+while recusively trying for other combinations of lower target amt, if we find the
+     */
 
     //Top down approach
     public int coinChange(int[] coins, int amount) {
@@ -60,9 +72,35 @@ public class CoinChange {
         return dp[amount] == amount +1 ? -1 : dp[amount];
     }
 
+    // time O(S^n)
+    private int coinChange4(int index, int[] coins, int amt) {
+        if(amt == 0) return 0;
+
+        if( index >= coins.length || amt > 0)
+            return -1;
+
+        int maxVal = amt/coins[index];
+        int minCost = Integer.MAX_VALUE;
+        for(int x=0; x <= maxVal; x++) {
+            if(amt >= x*coins[index]) continue;
+            int res = coinChange4(index+1, coins, amt - x*coins[index]);
+            if(res != -1)
+                minCost = Math.min(minCost, res+x);
+        }
+        return minCost == Integer.MAX_VALUE ? -1 : minCost;
+    }
+
     /**
      * Top down dynamic programing. Using map to store intermediate results.
      * Returns Integer.MAX_VALUE if total cannot be formed with given coins
+     *
+     * F(S) min coins needed to make change for amt S using coin denominations [c0,..cn-1]
+     *
+     * The optimal solution ca be constructed from optimal solutions of its subproblems
+     * how to split the porlbme into subproblems?
+     * F(S) = F(S-C) +1
+     *
+     *  F(S) = min (0, n-1) F(S- Ci) +1 subject to
      */
     public int minimumCoinTopDown(int total, int coins[], Map<Integer, Integer> map) {
 
@@ -101,9 +139,24 @@ public class CoinChange {
         return min;
     }
 
+    public int coinChange5(int[] coins, int amount) {
+        if(coins.length == 0 || amount <= 0) return -1;
+        Arrays.sort(coins);
+
+        int[] amt = new int[amount+1];
+        Arrays.fill(amt, amount+1);
+        amt[0] = 0;
+        for(int i=1; i<= amount; i++)
+            for(int j=0; j< coins.length; j++)
+                if(i >= coins[j])
+                    amt[i] = Math.min(amt[i], amt[i - coins[j]] + 1);
+
+        return amt[amount] > amount ? -1 : amt[amount];
+    }
+
     public static void main(String[] args) {
         CoinChange coinChange = new CoinChange();
-        int[] coins = {186,419,83,408};
-        System.out.println("min coin is " + coinChange.coinChange(coins, 6249));
+        int[] coins = {1,2,5};
+        System.out.println("min coin is " + coinChange.coinChange5(coins, 11));
     }
 }

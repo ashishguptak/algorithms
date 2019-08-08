@@ -55,8 +55,6 @@ ElasticSearch based on Lucene
 S3
 Hadoop/ Spark using HDFS
 
-
-
 Write a web service with
 Advanced Spring features - ScheduledTasks, Hystrix, Kafka, RateLimiter, Guava lib, Mybatis queries, Logging - Sleuth
 Swagger api & fnt tests, Dynamo db/ Mongodb/Cassandra change, Kafka stream, Exception handling, FF4j, Feign Client, Actuator

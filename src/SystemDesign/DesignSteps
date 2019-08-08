@@ -1,0 +1,201 @@
+Technical Skills
+Problem Solving Ability
+Communication Ability
+
+
+Technical interview format -
+When asked for solution ,first define the problem as you see it
+If you don’t understand the questions, ask for clarification
+If you need to assume something, verbally check if its the right thing
+Describe how you want to tackle solving each part of the problem
+Come up with brute force algorithm
+Optimize the problem
+Always let your interviewer know what your thinking - its important for interviewer to understand your thought process
+Don’t assume things before checking with interviewer
+Do you find multiple solutions before finding the right one?
+Do you test your code?
+
+
+They want to gauge your thought process as well as your coding skills
+Do not jump straight into the coding, make sure to talk through the problem, ask clarifying questions, and walk them through what you will be doing
+They do like to give hints! Please take those, as they want to see how you take a suggestion and implement that into your work
+Debug and test your code at the end
+
+Our technical phone interviews typically focus on computer science fundamentals -- you can expect to be asked questions regarding:
+CS Fundamentals- algorithms & data structures
+Coding & debugging
+To practice for your interview-
+you may want to visit the following websites:
+http://www.crazyforcode.com/algorithm/ (it’s best to try to solve the problems yourself instead of reading the solutions from the website). 
+https://s3.amazonaws.com/ubercandidateprep/index.html is a great resource that provides a good overview of our interviews 
+You can also find lots of problems to solve at http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/. 
+
+How to succeed:
+At Uber, we believe in collaboration and sharing ideas. Most importantly, you may need more information from the interviewer to analyze and answer the question to its full extent.
+It's OK to question your interviewer!
+When asked to provide a solution, first define and frame the problem as you see it.
+If you don't understand the question, ask for help or clarification.
+If you need to assume something, verbally check it's a correct assumption.
+Describe how you want to tackle solving each part of the question.
+Always let your interviewer know what you are thinking. He or she will be as interested in your thought process as your solution. If you're stuck, let your interviewer know. They may help clarify the problem to get you back on the right track.
+Finally, listen to your interviewer; don't miss a clarification if your interviewer is trying to assist you.
+
+Interviewers will be looking at your approach to questions as much as the answer:
+Are you listening carefully and comprehending the question?
+Are you asking the correct questions before proceeding? (important!)
+Is brute force used to solve a problem? (not good!)
+Are things assumed without first checking? (not good!)
+Are hints heard and heeded?
+Are you taking excess time to comprehend / solve problems? (not good!)
+Do you enjoy finding multiple solutions before choosing the best one?
+Are new ideas and methods of tackling a problem sought?
+Are you inventive and flexible in your solutions and open to new ideas?
+Can you handle questions that lead to more complex problem solving?
+
+Sample Topics:
+
+Coding
+Sample topics: data structures, distill large data sets to single values, transform one data set to another.
+
+Algorithm Design / Analysis
+Sample topics: big-O analysis, sorting and hashing, handling obscenely large amounts of data. 
+
+System Design
+Sample topics: feature sets, interfaces, class hierarchies, designing a system under certain constraints, simplicity and robustness, tradeoffs.
+
+Open-Ended Discussion
+Sample topics: biggest challenges faced, best/worst designs seen, performance analysis and optimization, testing, ideas for improving existing products.
+
+ALWAYS test your code. 
+
+Your phone interview format will be as follows:
+Introductions (10 min)
+Coding Exercises (30-40 min)
+Relevant Experience and Questions (10-15 min)
+ 
+What to expect in phone interviews, regardless of domain:
+General problem solving skills: in the live coding exercise, you will be asked to solve 1-2 technical exercises and write working code to implement the solution.
+Common data structures and algorithms
+Runtime analysis (Big-O)
+ 
+Helpful tips when going through the interview:
+When coding, make sure you fully understand what's being asked before diving in. It's always okay to have the interviewer clarify.
+Make sure you talk through your process out loud. We're looking for clean, optimized code, and we want to know your way of getting there.
+We love candidates who show strong commitment and passion, as well as those who are team players. We want people to be excited about working at Uber, not just because of the company, but because they enjoy the product, or have ideas on how to make us better.  
+
+What to expect in the architecture and design interviews:
+
+Architecture interviews focus on your ability to dig in and understand requirements from an ambiguous problem description and utilize modern tools to design a solution. You should expect to demonstrate the following two skills:
+Requirements gathering – ask questions to define the scope of the problem that needs to be solved, starting with the customer; define the use cases and make sure you have a concrete understanding of the problem that must be solved.
+Design – discuss trade-offs with different system design strategies, settle on one, model the data, and describe the logical and physical architecture of the components or services involved. Some tips for preparing include:
+* 		Use industry standard technologies (databases, messaging systems, caching systems, restful web services, etc.)
+* 		Demonstrate good design practices and the ability to apply your experience and computational theory to a problem domain.
+*
+How to prepare:
+As you are preparing for our architecture and design interviews, make sure that you can speak to the architecture patterns that you have used in the past. Anything on your resume is fair game for a conversation. It is helpful to be familiar with concepts presented at https://www.hiredintech.com/system-design/the-system-design-process/. We will give you an intentionally ambiguous design question. We are interested in your ability to address each of the following in your design:
+* Business Requirements (what problem are we solving for the customer?)
+* Engineering Requirements
+* Definition of data and storage requirements
+* Breakdown of systems as components or services
+* Fault tolerance and Operations
+In addition, you might want to cover other topics, such as scalability, operational excellence, correctness/validity, and security. Obviously, you will not be able to discuss each of these topics in-depth in an hour – pick a few and focus on them.
+Sample question
+One example of an architecture question is Design the homepage of the Seattle Times.
+
+
+How to approach System design problems?
+
+Step 1: Outline use cases, constraints and assumptions
+Gather requirements and scope of the problem. Ask questions to clarify questions and use-cases.
+Who is going to use it?
+How are thee going to use it?
+How many users are there?
+What does the system do?
+Are the users geographically separated?
+How is the traffic trend across different geographers?
+What are the inputs and outputs of system?
+How much data do we expect to handle?
+What is the peak traffic volume we are designing this system for?
+Is this system read/write intensive?
+Do we have to support Multimedia - photos/ videos storage?
+
+Step 2: Create a high level design
+Sketch main components and connections
+
+Stpes 3: design core components
+Dive into details for each core component. For example, if you were asked to design a url shortening service, discuss:
+* Generating and storing a hash of the full url
+    * MD5 and Base62
+    * Hash collisions
+    * SQL or NoSQL
+    * Database schema
+* Translating a hashed url to the full url
+    * Database lookup
+* API and object-oriented design
+
+Steps 4: Scale the design
+Identify and address bottlenecks, given the constraints. For ex, do you need the following to address scalability?
+Load balancer
+Horizontal scaling
+Caching
+Database sharding
+
+
+
+Step 1:
+Requirements gathering, Use-cases and constraints
+Step2 :
+System interface definition
+Step 3:
+Back of the envelope estimation - scale of the system
+Step 4:
+Defining Data Model
+Step 5:
+High level design
+Step 6:
+Detailed design - able to present different approaches and their pros and cons
+Step 7:
+Identifying and resolving bottlenecks- discuss all bottlenecks and different approaches to mitigate them.
+
+
+How a design document is written?
+Sequence Diagrams
+Domain Model
+Future Optimizations
+Define SLA
+Monitoring
+Alerts
+Roll-Over Strategy - Traffic-Based, Database considerations, dynamic configuration
+Work-BreakDown Structure
+
+
+Here are some examples of significant decisions, in three broad classes of requirements:
+
+Functional Requirements — business rules, time to market, transactionality, authentication and authorization, legal or regulatory compliance
+Architectural Requirements — client/server, mobile, microservices, programming language, front-end framework, back-end database, API framework, mobile framework
+Non-Functional Requirements — scalability, performance, availability, security, capacity, reliability, maintainability, recoverability
+
+
+Interested in helping us change the world of payments forever? The Stellar Development Foundation (SDF) is looking for a talented, experienced, and hands-on platform engineer to join our team. In this role, you’ll be designing, building, and implementing the tools and services that empower Stellar's ecosystem. By working within the platform team, you'll be working on open source projects that empower developers to use the Stellar network for a wide variety of goals and use cases.
+You will:
+    * Be involved with all aspects of the development process for platform projects - from vision to final implementation.
+    * Design new platform functionality with the corresponding APIs for external developers.
+    * Build and maintain web services to support the foundation’s mission (increasing network participation, enabling lumen distribution, and highlighting the stability of the network).
+    * Identify patterns in developer needs and design new protocols and services to increase developer velocity across our entire ecosystem.
+    * Engage with our community of open source developers on projects that encompass many different frameworks, languages, and ideas.
+    * Collaborate with the team on code review and design, and contribute to best practices for all of engineering at SDF.
+    * Investigate and refactor performance bottlenecks in order to continue scaling our API services.
+    * Provide assistance and guidance for our integration projects with our partners and other organizations on the Stellar network.
+    * Author detailed technical feature and protocol (RFC) specifications - we take design seriously, and we encourage everyone to be a part of our RFC processes.
+Requirements:
+    * You have 4+ years of experience developing software on a team.
+    * You have a BS or MS in Computer Science or equivalent field.
+    * You have strong computer science fundamentals: data structures, algorithms, distributed systems, and information retrieval
+    * You're a language polyglot and have written server applications in languages such as Go, Rust, C#, Java or C++.
+    * You have experience in supporting production web services at scale.
+    * You're a great communicator that can advocate and lead technical discussions, especially during the design and code review process.
+    * You have a solid understanding of software design patterns, and how to build components that are reusable, extensible, and modular.
+    * You are knowledgeable of existing frameworks and open source tools and are willing to build new frameworks when open ones do not exist.
+    * You have a passion for performance debugging and benchmarking.
+    * You're enthusiastic about working on a small, growing team where you'll be given a lot of autonomy.
+    * You're open, empathetic, and care about putting the best ideas forward in a collaborative and helpful manner.

@@ -30,9 +30,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author ashish gupta (akonda@expedia.com)
  */
 public class RealTimeCounter {
-
-    BigDecimal bigDecimal;
-
     private AtomicLong counter;
     private AtomicReference<Timestamp> currTimeStamp;
 

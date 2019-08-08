@@ -1,0 +1,98 @@
+Let's design a Web Crawler that will systematically browse and download the World Wide Web. Web crawlers are also known as web spiders, robots, worms, walkers, and bots.
+
+
+Crawler challenges -
+- robustness (server failure)
+- crawling courtesy (server load balance, robot exclusion)
+- handling file types
+- recognise redundant pages(identical)
+
+Major Crawling Stratgeies -
+
+BFS (balance server load)
+Parallel crawling is natural
+
+Focused Crawling
+- target at a subset of pages
+- typically given a query
+
+how to find new pages?
+they may not be linked to old page
+
+Incremental crawling-
+Need to minimize resource overhead
+target at 1) freq updated pages 2) freq accessed pages
+- updated daily/monthly
+
+Crawler is a software program which browses the www in a methodical and automated manner. It collects document by recusively fetching links from a set of starting pages. Indexers use this information to keep up-to-date. Search engines download all pages to create an index on them and perform faster searches.
+
+Use Cases-
+Scalability - our service needs to be scalable such that it can crawl the entire web and be used to fetch hundreds of millions of web documents
+
+extensible - our service should be designed in a modular way such that new functionality can be added. there could be newer documents that could be downloaded and processed in future
+
+Design considerations
+
+Is it a general purpose crawler that supports multiple media types? html, audio, video, photo etc
+if yes, parsing module can be segrgated into diff modules
+
+Protocol support
+HTTP, FTP
+
+Expected #pages that will be crawled and how big will the URL db become?
+Crawl a billion websites.
+A websie can contain many URLs, upper bound of 15billion eb pages tahat will be crawled
+
+RobotsExclusion
+crawler will fetch a special docment Robot.txt which contains parts of the sites which are off limits for crawling before downlaoding any real content
+
+Capacity Estimates and constraints
+define the crawling cycle? 1 week/ 1 month
+crawl 15 billion pages in one month, pages to fetch per second?
+15bil / 4 weeks *7 days * 86400 ~ 6200 pages/ sec
+
+Storage
+HTML pages size 100Kb, 500 bytes of metadata
+15 bil * (100kb + 500) ~ 1.5 pb
+
+High level design -
+
+Take a list of seed URLs and execute the following -
+1) Pick a url from unvisted URL list
+2) determine the ip address of the hostname
+3) establish a connection with host to download the html document
+4) parse the document for ne urls
+5) add the new urls to unvisited urls
+6) process the downlaoded document - store it or index its contents etc
+7) go back to Step 1
+
+How to crawl?
+BFS or DFS
+Path ascending url
+
+Challenges in implementing efficient web crawler
+- large volume of web pages
+- rate of change of web pages
+
+min components -
+1. url frontier - to store list of urls and prioirtize which ones to crawl first
+2. http fetcher - to retrieve a web page from server
+3. extractor - to extract the links from g=html documents
+4. duplicate eliminator
+5. datastore - to store retrieved pages, urls and other metadata
+
+Low level design
+
+URL frontier- data structure that contain all URLs that need to be processed.
+traversal in BFS manner
+FIFO queue
+
+Fetcher module
+
+Document Input Stream
+Document dedeupe test
+URL filters
+DNS servers
+URL dedup
+to save space use checkSum
+cache with LFU scheme

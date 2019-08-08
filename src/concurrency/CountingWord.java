@@ -79,7 +79,6 @@ public class CountingWord {
        } else {
            val.incrementAndGet();
        }
-
        //System.out.println(Thread.currentThread().getName());
     }
 

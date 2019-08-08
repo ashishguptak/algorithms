@@ -18,8 +18,6 @@ https://leetcode.com/articles/implement-stack-using-queues/
 
 https://leetcode.com/problems/rearrange-string-k-distance-apart
 
-Bloom filters
-
 https://www.geeksforgeeks.org/print-all-the-cycles-in-an-undirected-graph/
 
 https://www.geeksforgeeks.org/minimum-cost-path-from-source-node-to-destination-node-via-an-intermediate-node/
@@ -45,3 +43,65 @@ https://www.geeksforgeeks.org/sorting-a-hashmap-according-to-values/
 http://pragmaticnotes.com/2017/08/10/benchmarking-approaches-to-sort-java-map-by-value/
 
 Meeting Room Optimization - on interviewing.io
+
+Q: Given a tree representing an org chart for a company where each node's value
+contains that employees fun rating, give me the maximum amount of fun this company can have
+at a party where there is 1 restriction:
+	1.	If I go to the party, my direct reports can NOT go to the party.
+
+          2
+        4    5
+      3   3    6
+    7  5      6    7
+  -3  4  6  8   0    9
+
+
+All Nodes Distance K In A Binary Tree
+
+Find the two numbers in two BSTs who adds up to a given target
+
+Given an vector<string> (e.g ['cc', 'ca', 'bc']) and a dictionary order (e.g. ['c', 'b', 'a']). To decide whether the given vector<string> is sorted or not.
+
+Find maximum length of continous subarrays within an array(DP)
+
+number of islands of different shape
+
+find the peak in an array
+Design a class that has a built-in function to copy a tree
+
+Circular Deque
+
+Find longest increasing subarray in a given array
+
+Add two binary numbers (Input as a string)
+
+find the Longest Palindromic Sub-string in any string using Manachere algo - O(n) time
+https://www.hackerearth.com/practice/algorithms/string-algorithm/manachars-algorithm/tutorial/
+
+Concurrent HashMaps
+
+Qualtrics
+Write splitwise - Keep track of the payments sent and owed between people and calculate how much each person owes another at the end.
+
+Pretend you have to implement a white elephant gift exchange where everyone needs to give a present to someone else and not receive their own how would you do it?
+
+Different players game
+
+unrolled linked lists.
+
+Implement an iterator for a binary tree using any traversal, find all combinations of values in an array that sum to a given target value, find the smallest multiple of a number that only contains 0s 1s and 2s, determine if a number is a power of 2 iteratively and recursively, given (x,y) on pascal's triangle find the number belong to that coordinate, convert a binary tree to a doubly linked list, implement getAt(int index) and insertAt(int index, char value) for an unrolled linked list.
+
+Given a finite list of queues, and people who post to queues, write a function to handle incoming posts
+
+https://leetcode.com/discuss/interview-experience/297576/google-onsite-interview-sde1-new-grad-mountain-view-ca
+
+Use of recursion in trees-
+- retain the same node positions in the tree but manipulate only in special cases
+
+backtracking is an algorithm for finding all solution by exploring all potential candidates. Is the solution candidate turns out to be invalid, backtracking discards it by making some changes to the previous step ie backtracks and then try again.
+
+A general way to solve substring problems - use a hashmap assisted with two pointers.
+1) Use two pointers : start and end to represent the window
+2) move end to find a valid window
+3) when a valid window is found, move start to find a smaller window
+

@@ -1,0 +1,115 @@
+Let's design a video sharing service like Youtube, where users will be able to upload/view/search videos.
+
+Use Cases -
+1) Upload video content
+2) View/Stream the videos on devices
+3) Search all videos on the platform based on titles
+4) User profiles
+5) define favorites
+6) show Top trending videos
+7) Share videos, add comments, likes, subscribe
+8) View Analytics - #views, likes, dislikes etc
+
+Out of scope-
+1) Recommendations for Users to view
+2) Subtitles for videos with no script
+3) Content regulatory compliance
+4) Watch Later, channels
+
+Non-functional requirements-
+
+
+Capacity estimates
+read-heavy service
+Let’s assume we have 1.5 billion total users, 800 million of whom are daily active users. If, on average, a user views five videos per day then the total video-views per second would be:
+
+800M * 5 / 86400 sec => 46K videos/sec
+Let’s assume our upload:view ratio is 1:200, i.e., for every video upload we have 200 videos viewed, giving us 230 videos uploaded per second.
+
+46K / 200 => 230 videos/sec
+
+web-scale service
+globally available
+
+Peak QPS view
+10 million views/sec
+1:100 ratio for upload and view
+
+Upload
+100k uploads/sec
+
+Search
+50% of peak view traffic
+1 million/sec
+
+Storage requirements
+Distributed Block storage for all video content
+100K * 3Mb * 86400 * 5 =  bytes
+This videos will be replicated, so storage needs will increase.
+
+Video metadata
+10K chars
+ElasticSearch cluster
+
+Service API
+REST APIs
+all apis needs api_dev_key
+- uploadVideo(title, description, tags[], lang, video_contents)
+   returns (string)
+   a successful upload will return HTTP 202 and once video encoding is completed the user is notified through email with a link to access the video.
+
+- streamVideo(video_id, offset, codec, resolution)
+offset - we should be able to support start/stop video from any offset.Offset is time in seconds. If we support playing on multiple devices, we need to store the offset server-side
+    returns Stream (A media stream (a video chunk) from the given offset)
+
+- Search (searchString) pagination concepts
+maximum_videos_to_return (number): Maximum number of results returned in one request.
+page_token (string): This token will specify a page in the result set that should be returned.
+    returns (JSON)
+    list of video resource matching the search query with thumbnails
+
+- CreateUser
+
+Trans-coding of Video to different resolution for multiple devices, efficient bandwidth support.
+
+API throttling and Basic Auth
+
+Defining Data Model
+MicroServices based arch
+define functionality - User profile mgmt, Upload Video, Search, View, View analytics, Favorites, WatchList
+
+High Level Design -
+User Profile-
+Processing queue - for transcoding, thumbnail and storage
+Encoder - to upload each video in different formats
+tumbails - generate thumbnails for each video
+video and thumbnail storage - to store videos and thumb nails in DFS
+User database -
+Video metadata storage - a metadata db  to store all info like videos, filepath in system, userId, total views, lokes, dislikes etc
+store video comments also
+
+
+Data Domain Model
+user id (pk)
+    - User name
+    - attributes
+    - subscription scheme
+
+NoSQL data Store
+
+Search
+create multiple indexes and search content
+reference the video
+
+Low-Level Design-
+Distributed read and write traffic on different servers, we will ahve multiple copies of each video we can distribute read on different servers.
+Cache thumbnails for hot reads
+. Keeping hot thumbnails in the cache will also help in improving the latencies and, given that thumbnails files are small in size, we can easily cache a large number of such files in memory.
+
+Video Uploads: Since videos could be huge, if while uploading the connection drops we should support resuming from the same point.
+thumbnails has higher read traffic than videos. Select an efficient file storage system for
+
+MetaData Sharding
+Strategies
+
+ElasticSearch

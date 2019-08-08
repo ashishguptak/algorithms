@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class CourseSchedule {
 
-    List<Integer>[] edges;
+    private List<Integer>[] edges;
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         edges = new List[numCourses];
@@ -25,7 +25,6 @@ public class CourseSchedule {
                 edges[each[1]] = new ArrayList<>();
             edges[each[1]].add(each[0]);
         }
-
         return dfs();
     }
 

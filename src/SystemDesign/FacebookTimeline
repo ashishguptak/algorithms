@@ -1,0 +1,141 @@
+You are the VP of Twitter in the early days and the product is growing exponentially. The key feature of Twitter is that of the timeline--you can see Retweets between people you follow and conversations where people you follow if they "@" each other. The problem is that joining this data together from the different followers is very slow. How can we scale this system so that users quickly see their timeline? We want the timeline to contain the latest and most relevant information for the user and for the timeline to be readily available at minimum compute time at the time the users checks their timeline.
+
+Let's design Facebook's Newsfeed, which would contain posts, photos, videos, and status updates from all the people and pages a user follows.
+
+Similar Services: Twitter Newsfeed, Instagram Newsfeed, Quora Newsfeed
+
+Use Cases -
+1) newsfeed will be generated based on the posts from people, pages, groups that a user follows
+2) A user may have many friends and follow a large number of pages/groups
+3) Feeds may contain video, photo r text
+4) Our service should support appending new posts as they arrive to the newsfeed for all active users
+5) generate news feed in real time with min latency (max 3s)
+6) Handle Users with extreme followers (more than a million)
+
+Capacity Estimates and Constraints
+
+Lets assume a user has 300friends and follows 200 pages
+
+Traffic estimates
+300 mil daily active users with each user fetching timeline 5 times a day
+this will result in 1.5 billion news feed request or
+18000 req/sec
+
+Storage Estimate
+We want to have around 500 posts in every user's feed we want to fetch
+Each post will take close to 1 kb in size
+500Kb * 300 mil = 150 Tb of memory
+each machine can store 100 gb so we need 1500 machines for all active users
+
+System APIs
+- getUserFeed(userID, count, max_id)
+ returns json object of list<feed items>
+
+Database Design
+User
+Entity (page/ group)
+FeedItem (or Post)
+
+relationship between entities-
+a user can follow other entitites and become friends with other users
+both entities and users can post feeditems that contain text, video/ images
+each feedItem will have a userId who created it
+Feeditem can have optional entityId pointing to the page/group that post was created
+
+User-Entity relation
+FeedItem-Media realtion
+
+possibly a Social Graph Database to represent relationship among users and different entities
+
+User
+ userId(pk)
+    - user metadata
+
+
+entity
+    entityId(pk)
+        - name
+        - createDate
+        - Category ( page/group)
+
+userFollow
+    userId: entityId(friendId) pk
+
+FeedItem
+    feedItemId(pk)
+        -userId
+        - entityId
+        - parentFeedItemId
+        - Loc
+        - Timestamp
+        - MediaId
+
+High Level System Design
+divide into two parts-
+
+Feed generation -
+Newsfeed is generated from post items of users and entitites that a user follows
+1) Retrieve IDs of all users and entitites that user follows
+2) retrieve latest, most popular and relevant post for those IDs
+3) Rank post based on relevance to user
+4) Store that feed in cache and return top posts (50) to eb rendered on user page
+5) Paginate for next set of results
+
+how to handle incoming posts from USer's followers?
+
+
+Feed publishing -
+when user loads her newsfeed page, she has to request and pull the items from the server.
+for new items, two options-
+1) Server can notify user and she can pull
+2) Server can push these new posts
+
+Components in our Newsfeed Service
+Web servers
+App Server
+Metadata db and cache - store metadata about users/ groups and entitites
+Post database and Cache - to store metadata about posts and their contents
+Video and photo storage and cache -
+News feed generation Service - to gather and rank the relevant posts for a user to generate newsfeed and store in cache. this service will also receive
+live updates and will add these newer feed items to the user's timeline
+Feed notification Service- to notify the user that there are newer items availbale for newsfeed
+
+Low level Design -
+
+Feed Generation Service
+
+Offline generation for Newsfeed-
+have dedicated servers that are continuously generating users' newsfeed and storing them in memory. so, whenever users request for new posts, we simply fetch from the memeory store. Under this scheme, newsfeed is not computed on load, but on regular basis and return to users whenever they request
+
+Key - UserID
+Struct {
+    LinkedHashMap<FeedItem>
+    date last;
+}
+
+Storage needs- 500 feedItems per user
+storage can be decided for users on usage patterns to save memory and efficient operations
+rest query backend servers
+
+should we generate newsfeed for all users?
+not for everyone, use LRU based cache
+use machine learning to generate newsfeed for users based on login pattern and demography
+
+Live updates problem ( Feed publishing )
+Processing of publishing tweets to all followers is called fanout
+push approach is called fan-out on write
+pull approach is called fanout-on load
+
+Pull model -
+keeping all the recent feed data in memory so that users can pull it from the server when they need it.
+
+
+
+
+
+
+
+
+
+
+

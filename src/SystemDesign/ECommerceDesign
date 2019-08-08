@@ -1,0 +1,132 @@
+Design Amazon like E-commerce website-
+
+Functional Requirements/ Use Cases
+- Users must be able to search products on the website based on tags/ brands/range etc
+- User must be able to select list of product and quantity to be ordered
+- User must be place the order from shopping cart items
+- User must be able to move the cart items to save later section
+- User must be a able to select and process multiple FOPs
+- User must be notified of itinerary delivery and tracking
+- User must be able to return an item
+- User must be able to see the ETA for each product in the cart before ordering
+- User must be suggested of similar items in case of non-availability of product
+- Users can check all the Ordered items in the past
+- Merchants can add product details and pricing on the E-commerce store
+- Users must be able to read/comment/rate products
+- schedule the item delivery
+
+Non-Functional Requirements-
+- System must be HA
+- min latency
+
+System Level APIs
+- search( SearchCriteria obj)
+- addToCart(List<Product> list)
+- placeOrder(List<Product> list)
+- returnItem(List<Product> list)
+- selectPaymentMethod(List<PaymentMethod>)
+- checkOrderedItems(DateRange)
+
+REST APIs
+To authenticate my webservice calls, OAuth/ BasicAuth, throttling to avoid fraudulent usage
+- search( SearchCriteria obj)
+
+Search results must support Pagination
+
+POST /search/{userId}
+    Request Body {
+        product_name
+           Filter [
+                <optional> tag
+                   brand
+                   range
+                   category
+           ]
+    }
+
+PUT /cart/{userId}/addItems
+    RequestBody {
+        items [
+            {
+                product_id:
+                quantity :
+            }
+        ]
+    }
+
+POST /orders/{userId}
+    RequestBody {
+        items [
+            {
+                product_id:
+                quantity :
+            }
+        ]
+    }
+
+
+GET /orders/{userId}/?queryparams=from &to
+
+Capacity Planning & Constraints-
+
+Traffic Estimates -
+Peak traffic can go around 10 million TPS
+Avg #orders/ sec on Amazon site - 10K orders/sec
+Keeping 1:100 checkout ratio - 10K * 100 -> 1 million TPS
+
+Storage Estimates -
+Product details
+User Profile
+Reviews
+Order Delivery Info
+
+High level Design-
+
+Product Search Service
+Backed by a Elastic Search Cluster
+maintain multiple/partitioned clusters for products based on multiple tags
+
+User Profile Service
+Read heavy system
+User Data Model
+    - UserId (pk)
+        user metadata
+        LastLogin
+
+Checkout Service
+Write-heavy system
+Checkout Data Model
+    - userId (pk)
+        productId
+        quantity
+        CreatedDate
+        LastUpdateDate
+
+Product Inventory Service
+Read heavy system
+Product Data Model
+    -productId (pk)
+        quantity
+        category
+        product metadata
+        Image/ video - s3 storage link
+        thumbnails
+        price
+        Reviews
+
+Delivery Service
+Delivery Data Model
+    - productId, orderId (pk)
+        inventory loc
+        logistics partner
+        Status of delivery
+
+Order Service
+Write heavy system
+Order Data Model
+    - OrderId(pk)
+        userId
+        productId
+        CreatedDate
+
+High Level Design

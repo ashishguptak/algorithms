@@ -10,6 +10,8 @@ import java.util.Deque;
 /**
  * https://leetcode.com/problems/binary-search-tree-iterator/description/
  *
+ *  https://leetcode.com/articles/binary-search-tree-iterator/
+ *
  * This is in fact average O(1) time. The while loop is misleading you to think it is not.
  * Think about the number of times a node has been visited after iterating the whole tree.
  * Each node has been visited twice. In some cases the while loop doesn't execute, so that node at that call is only visited once.

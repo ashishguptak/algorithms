@@ -2,13 +2,12 @@
  * Copyright 2019 Expedia, Inc. All rights reserved.
  * EXPEDIA PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package concurrency;
+package dataStructures.Graph;
 
 /**
- *
- *  https://stackoverflow.com/questions/9749746/what-is-the-difference-between-atomic-volatile-synchronized
+ * https://www.geeksforgeeks.org/the-celebrity-problem/
  *
  * @author ashish gupta (akonda@expedia.com)
  */
-public class AtomicReferenceImpl {
+public class CelebrityProblem {
 }

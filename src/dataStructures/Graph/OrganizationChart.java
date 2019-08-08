@@ -65,7 +65,7 @@ public class OrganizationChart {
     }
 
     private void printEmployee(Employee emp, int level) {
-        StringBuilder sb =new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for(int i=0; i< level; i++) sb.append("  ");
         System.out.println(sb + emp.name + " (" + emp.title +")");
     }

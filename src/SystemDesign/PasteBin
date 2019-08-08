@@ -1,0 +1,91 @@
+Designing Pastebin
+Let's design a Pastebin like web service, where users can store plain text. Users of the service will enter a piece of text and get a randomly generated URL to access it.
+
+Use Cases -
+1) users must be able to upload text documents
+2) access the documents from a url
+3) Expiry of links and hence documents
+4) Analytics
+5) delete Pastes
+
+- #documents uploaded per client
+- #read per min per client
+
+Constraints, System Scale-
+Read intensive system
+URL length - uri path based service resource fetching
+
+Text document length -max 10Mb
+Documents per client
+
+back-of-the-envelope estimates
+Globally scalable and available Service
+Twitter system - 1 billion/tweets a day
+Read:write ratio  100:1
+
+write-per-sec - 1 million/day -> 120 writes/sec
+              - 12K read/sec
+
+Storage of documents
+1200 writes/sec * 86400*5*365 * 10 Mb ->  3-4 Petabytes
+
+Persistent file Storage Solution
+Distributed Storage Soln
+S3/ HDFS - globally available
+
+
+System Interface
+- postDocument(userId, text, expireTime)
+    return url
+- getDocument(url)
+    return text
+
+REST based API
+basicAuth
+throttling per Clients to avoid fraudulent usage
+
+High-level Design
+MicroServices based Arch
+- User Service
+  Data Model
+  userId(pk)
+      - Max Count of new Urls
+
+- Url generation Service - highly available by running offline process to pre-compute all random urls to give to the client
+
+
+- File Storage Service - S3 based approach
+   DataStore for tinyUrls to File Storage lookup
+   NoSQL
+   tinyUrl(pk)
+   expiryTime
+    - link to S3 bucket
+
+
+Steps-
+- postDocument(userId, text, expireTime)
+   1) find if user is valid and can store more documents
+   2) send the text to S3 bucket
+   3) create a mapping in File Storage Service for the url
+   4) send url response
+
+- getDocument(url)
+  1) lookup if link is not expired
+  2) get the S3 url from DB
+  3) redirect to s3 bucket
+
+Purge Expired links/documents
+- run offline cron job adn delete the records from File Storage Service and S3
+
+Scalability and Availability
+
+
+
+
+
+
+
+
+
+
+

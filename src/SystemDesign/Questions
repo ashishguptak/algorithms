@@ -53,13 +53,19 @@ Snake Game
 
 stock trading system design
 
-Q: Given a tree representing an org chart for a company where each node's value
-contains that employees fun rating, give me the maximum amount of fun this company can have
-at a party where there is 1 restriction:
-	1.	If I go to the party, my direct reports can NOT go to the party.
+Design a system to capture unique addresses in the entire world.
+Answer: Discussed the overall system design, APIs, techniques for cleaning address data, finding a unique address amongst a set of duplicates, processing, storing and retrieving it in an effecient manner.
 
-          2
-        4    5
-      3   3    6
-    7  5      6    7
-  -3  4  6  8   0    9
+https://leetcode.com/discuss/interview-question/341980/Design-a-system-to-capture-unique-addresses-in-the-entire-world
+
+Write a background service that queries the status on the backend by a certain interval.
+
+Model a system which will allow an administrator to control the product visibility of a sale at Amazon using a given set of rules. The system should allow the administrator to create rules on transaction information and thus disabling or enabling products visible for sale, such as price, category, etc.
+
+Design a system used for taxi reservation. How would you handle conditions such as users, scale and other conditions.
+
+Thinking of Amazon Locker for example.  Each Locker has a position and a size. Given the number of times a locker has been used, find the size that is most popular.
+
+We ship millions of customer orders around the world, carried by different carriers like UPS, FedEx.  We report status of the delivery via a push notification and via website. These carriers have varying formats, SLAs, and QoSs. How would you design a system to maintain status of our shipments and report the same to the customer?
+
+https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html

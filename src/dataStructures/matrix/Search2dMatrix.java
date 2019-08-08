@@ -7,8 +7,8 @@ package dataStructures.matrix;
 /**
  *
  *https://leetcode.com/problems/search-a-2d-matrix/description/
- *
- * O(log(m) + log(n))
+ *https://leetcode.com/problems/search-a-2d-matrix/discuss/26220/Don't-treat-it-as-a-2D-matrix-just-treat-it-as-a-sorted-list
+ * O(log(m) + log(n)) is same as O(log(mn))
  * @author ashish gupta (akonda@expedia.com)
  */
 public class Search2dMatrix {
@@ -49,5 +49,25 @@ public class Search2dMatrix {
             return bsRow(matrix, target, start, mid-1);
         else
             return bsRow(matrix, target, mid+1, end);
+    }
+
+    public boolean searchMatrix2(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0) {
+            return false;
+        }
+        int start = 0, rows = matrix.length, cols = matrix[0].length;
+        int end = rows * cols - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (matrix[mid / cols][mid % cols] == target) {
+                return true;
+            }
+            if (matrix[mid / cols][mid % cols] < target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return false;
     }
 }

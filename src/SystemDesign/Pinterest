@@ -1,0 +1,15 @@
+Pinterest has access to a large volume of 'pins' say of the order of 10 million. It is now required to display the 'Top 50' pins to the users on the website.
+Each pin has an associated 'score id' which is constantly updated as users 'like' the pin.
+Explain the run time complexity and memory requirements of the architecture.
+
+
+web Analytics problem
+
+Event Flowing Stream
+realtime show top 50
+
+Kafka + Samza combination
+build a pipeline
+
+Aggregation on stream
+Time window based aggregation

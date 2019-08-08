@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
+ * https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/8064/My-java-solution-with-FIFO-queue
+ *
  * https://leetcode.com/explore/interview/card/uber/290/recursion-and-backtracking/1688/
  *
  * @author ashish gupta (akonda@expedia.com)

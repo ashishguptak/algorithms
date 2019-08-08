@@ -1,0 +1,123 @@
+Designing Twitter
+Let's design a Twitter-like social networking service. Users of the service will be able to post tweets, follow other people, and favorite tweets.
+
+Use Cases -
+1) Post tweet
+2) Follow other users
+3) Favorite Tweets
+4) Retweet on other tweets
+5) Share photo/video content
+6) View Time line of oneself and followers, following content
+7) View User's Tweets
+8) Hot Users who have many Followers
+9) Trending topics
+10) Searching for Tweets
+
+Constraints, Capacity and Scope
+200 mil active users
+on avg, each user will follow 200 ppl
+
+- 500 million tweets a day
+  writes
+
+  both high read and write-intensive system
+
+  1:10 write-read ratio
+
+  500* 100/ 9 = 60K/sec writes
+  600K/sec reads
+
+  Peak traffic -
+  Read - 1 mil request/sec
+
+Tweet Storage
+    500 M * (140 + 140) = 30GB/day
+
+- Photo max 5 Mb
+  Video max 25Mb
+
+  Storage needs of multimedia content
+  1/100 write ratio
+ Peak write traffic for multimedia 6K * 5Mb * 5 * 365 * 86400 ~ Tb
+
+  Distributed Object Storage - S3
+  globally available and scales max
+
+Service API
+- postTweet(userId, tweetId, msg, parentTweetId, tweetLoc)
+- followUser(userId, followerId)
+- markFavorite(userId, tweetId)
+- postObject(userId, tweetId, object, parentTweetId)
+- viewMyTweets(userId)
+- viewTimeline(userId)
+
+REST API based
+Basic Auth, OAuth, throttling to avoid fraudulent usage
+
+High-level Component-
+
+postTweet
+tweet resource with my persistence layer
+
+Tweet Service
+Tweet Service Data Model
+tweet -> userId
+tweet -> parentTweetId
+
+tweetId(pk) NoSQL Schema
+    - parentTweetId
+    - userId
+    - TimeStamp
+    - Long.Lat
+    - Content
+    - #favs
+
+User Profile Service
+User Data Model - NoSQL schema
+userId(pk)
+    - List<Followers> (json document of userIds)
+    - List<Following> (json document of userIds)
+    - Last Login
+    - User Metadata
+
+User Favorites Service
+Favorite Data Model - NoSQL Schema
+userId(pk)
+    - List<Favorites> by Timeline TweetIds
+    jsonDocument within the DB
+
+postObject(userId, tweetId, object, parentTweetId)  400Kb max on a data item
+Media Upload Service
+- S3 and refernece the S3 link in the Dynamo DB table
+upload Video in different resolution formats for better experience on multiple devices
+
+viewMyTweets(userId)
+- not a efficient lookup for querying all tweets per user
+Partition the Tweet Data Model wrt to UserId and then sort them by TimeStamp (indexes)
+
+Partition Configuration Service which the App servers will lookup when servicing the request
+Highly Available - ZooKeeper/ S3/ In-Memory Redis Cluster for fast-lookups
+
+Partitioning Strategy
+- Range-based on userId ranges
+- Hash-based on userId
+
+problems are unbalanced clusters due to hot spots
+1) scale up/down rehash (downtime associated)
+2) unbalanced traffic
+
+Consistent hashing
+
+
+-viewTimeline(userId)
+Get the List of Followers from User Profile Service
+for each follower-
+    Get the Last 5 days Tweets for each Follower
+    Go to Tweet Data Service and for each follower fetch the last 5 days tweets (parallel operation)
+    Aggregate job to sort all the Timeline data from followers to send to client
+
+Hot Users who have many Followers -
+Different Clusters for High Impact Users
+
+
+Scalability

@@ -1,0 +1,152 @@
+Define URL shortening Service like bit.ly
+
+Use Cases -
+1) Shortening - return a short url
+2) Redirection - redirect to the original url
+3) Custom urls
+4) Analytics of shortened URLs - like daily reporting
+5) Automatic link expiration
+6) Manual link removal
+7) UI vs API
+
+Technical Requirements -
+high Availability
+
+Constraints-
+
+start with approximate nos -
+like Twitter generates 500 million tweets per day
+per month is 15 billion tweets
+Twitter needs URL shortening service
+Only 1 in 10 tweets needs URL shortening
+that means 1.5 billion short URL per month
+
+Our system must shorten 100 million URLs per month
+
+QPS
+App. 1 billion requests per month
+10% for shortening URLs and 90% for redirection
+TPS comes to 400/sec ( 40 for shortening and 360 are redirect)
+
+Data Store Calc
+Total urls - for 5 yrs is 6 billion URLs
+Avg length of Urls typically 500 bytes per Urls
+
+Avg len of Hashed Urls
+how big if hash we need to handle 6 billion urls?
+consider base 62 encoding - upper case, lower case letters and 0-9
+for seven char short urls, 62^7 -> 3.5 trillion combinations
+for 1000 req/ sec, it will take 10 yrs.
+less than 10 chars to represent the hash and it will generate close to 10 billion hashes
+6 bytes per hash
+
+Data Storage Needs
+3 TBs for all urls and 36 gb for all hashes
+
+Bandwidth estimates
+write request - 200*500 bytes = 100kb/sec total incoming data for the service
+read requests - 20K*500 bytes = 10 Mb ttoal outgoing data for the service
+
+Memory estimates: If we want to cache some of the hot URLs that are frequently accessed, how much memory will we need to store them? If we follow the 80-20 rule, meaning 20% of URLs generate 80% of traffic, we would like to cache these 20% hot URLs.
+
+Since we have 20K requests per second, we will be getting 1.7 billion requests per day:
+
+20K * 3600 seconds * 24 hours = ~1.7 billion
+To cache 20% of these requests, we will need 170GB of memory.
+
+0.2 * 1.7 billion * 500 bytes = ~170GB
+One thing to note here is that since there will be a lot of duplicate requests (of the same URL), therefore, our actual memory usage will be less than 170GB.
+
+API design-
+POST createTinyUrl(longurl)
+GET getlongUrl(tinyUrl)
+POST createTinyUrl(long, expirationTime)
+DELETE deleteUrl(tinyUrl)
+
+Consider throttling for Creating urls/client and also authentication schemes - BasicAuth
+Store Metadata in another table for #createApi per user
+
+Data Model Design
+Database Schema:
+We would need two tables: one for storing information about the URL mappings, and one for the user’s data who created the short link.
+
+Table 1
+PK hash(shortUrl)
+   OriginalURl
+   CreateDAte
+   ExpireDate
+   UserID
+
+Table 2:
+PK USerID
+Name
+creation Date
+Last Login
+
+High-level Design
+Our service is read-heavy
+1) App Service layer( serves the request)
+    -Shortening Service/custom url - generating a hew hash, check in datastore. If not, store in datastore. If yes, generate a new hash till not found in db.
+    - Redirection Service -
+2) Data Storage layer
+ - keeps track of the hash -> url mappings
+ Acts like a hash table - store new mappings and retrieves for a key
+
+Define how hashing works-
+apply MD5/SHA 256 (generates 128 bit long hash) to original url and concatenate with random salt
+Convert the above result to Base 62 and take first six bytes
+
+Consider hostNme, timeStamp identifiers also in generating unique fields
+
+Techniques to generate shortUrl
+handle collisions in DB
+1) Generate tinyurl and check in DB - wrong app
+2) putIfAbsent on NoSQL
+3) put, get and put again if record already exists
+4) Generate Keys Offline - use a stand-alone key Generation Service that stores all keys beforehand in another DB. We dont have to worry about collisions and unique insertions in DB.
+Concurrency issues with this 4 app -
+As soon as a key is used, it must be marked as used so that another thread will not use it. If there are multiple servers reading keys concurrently, we might get a scenario where two or more servers try to read the same key from the database. How can we solve this concurrency problem?
+Servers can use KGS to read/mark keys in the database. KGS can use two tables to store keys: one for keys that are not used yet, and one for all the used keys. As soon as KGS gives keys to one of the servers, it can move them to the used keys table. KGS can always keep some keys in memory so that it can quickly provide them whenever a server needs them.
+
+KGS also has to make sure not to give the same key to multiple servers. For that, it must synchronize (or get a lock on) the data structure holding the keys before removing keys from it and giving them to a server
+
+Use data partioning of KeyStore ranges to increase availability and avoid SPOF
+Give keys to an App Server in batches of 1000 keys r so
+
+Bottlenecks
+Traffic is not problem but data is more interesting
+
+Scalability
+
+To solve request from geographically distributed patterns, we could use CDN to store the urls for those regions
+but CreateTiny can go to main app Server.
+ -  Data Partitioning and Replication
+ Range based partitioning - deal using consistent hashing for unbalanced load
+ We can store URLs in separate partitions based on the first letter of the URL or the hash key. Hence we save all the URLs starting with letter ‘A’ in one partition, save those that start with letter ‘B’ in another partition and so on. This approach is called range-based partitioning. We can even combine certain less frequently occurring letters into one database partition. We should come up with a static partitioning scheme so that we can always store/find a file in a predictable manner.
+
+ The main problem with this approach is that it can lead to unbalanced servers. For example: we decide to put all URLs starting with letter ‘E’ into a DB partition, but later we realize that we have too many URLs that start with letter ‘E’.
+
+ hash based - on the tinyUrl and then map to #db servers %
+ Use Master-Slave config for DB to increase read availability (many read replicas)
+
+ - Distributed Caching (Redis)
+cache storage is 20% of daily traffic, based on client usage patterns we can scale up the cache servers needed
+Cache eviction policies
+we can replicate our caching servers to distribute load between them.
+Write-around Cache
+
+- Load Balancer
+Between Clients and Application servers
+Between Application Servers and database servers
+Between Application Servers and Cache servers
+
+
+Strategies for handling expiration
+Delete the expired links -
+App 1- run a batch job daily to delete all the expired records form the table
+How to handle calls form expired links
+In case, redirect request happens before record was deleted from table then the app server will check the diff between created time and expiration adn current time. If expired, return 404 to client.
+A separate clean-up service to run peridocially to remove expired links from storage and cache. Run during non-peak traffic.
+
+How to Solve Analytics?
+- Top k urls over last hr/ week / month
