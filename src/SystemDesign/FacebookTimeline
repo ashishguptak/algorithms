@@ -14,7 +14,7 @@ Use Cases -
 
 Capacity Estimates and Constraints
 
-Lets assume a user has 300friends and follows 200 pages
+Lets assume a user has 300 friends and follows 200 pages
 
 Traffic estimates
 300 mil daily active users with each user fetching timeline 5 times a day
@@ -83,7 +83,6 @@ Newsfeed is generated from post items of users and entitites that a user follows
 
 how to handle incoming posts from USer's followers?
 
-
 Feed publishing -
 when user loads her newsfeed page, she has to request and pull the items from the server.
 for new items, two options-
@@ -96,8 +95,8 @@ App Server
 Metadata db and cache - store metadata about users/ groups and entitites
 Post database and Cache - to store metadata about posts and their contents
 Video and photo storage and cache -
-News feed generation Service - to gather and rank the relevant posts for a user to generate newsfeed and store in cache. this service will also receive
-live updates and will add these newer feed items to the user's timeline
+News feed generation Service - to gather and rank the relevant posts for a user to generate newsfeed and store in cache. this service will also receive live updates and will add these newer feed items to the user's timeline
+
 Feed notification Service- to notify the user that there are newer items availbale for newsfeed
 
 Low level Design -
@@ -105,7 +104,7 @@ Low level Design -
 Feed Generation Service
 
 Offline generation for Newsfeed-
-have dedicated servers that are continuously generating users' newsfeed and storing them in memory. so, whenever users request for new posts, we simply fetch from the memeory store. Under this scheme, newsfeed is not computed on load, but on regular basis and return to users whenever they request
+have dedicated servers that are continuously generating users' newsfeed and storing them in memory. so, whenever users request for new posts, we simply fetch from the memory store. Under this scheme, newsfeed is not computed on load, but on regular basis and return to users whenever they request
 
 Key - UserID
 Struct {
@@ -130,12 +129,11 @@ Pull model -
 keeping all the recent feed data in memory so that users can pull it from the server when they need it.
 
 
-
-
-
-
-
-
-
+-viewTimeline(userId)
+Get the List of Followers from User Profile Service
+for each follower-
+    Get the Last 5 days Tweets for each Follower
+    Go to Tweet Data Service and for each follower fetch the last 5 days tweets (parallel operation)
+    Aggregate job to sort all the Timeline data from followers to send to client
 
 

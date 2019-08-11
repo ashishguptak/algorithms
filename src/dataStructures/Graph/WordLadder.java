@@ -4,36 +4,112 @@
  */
 package dataStructures.Graph;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
 /**
  * https://leetcode.com/problems/word-ladder/
+ *  https://leetcode.com/problems/word-ladder/discuss/40707/C%2B%2B-BFS
+ *
+ *
+ *  Time  O(V^2) + O(V+E)
+ *  Space O(V + E)
  *
  * @author ashish gupta (akonda@expedia.com)
  */
 public class WordLadder {
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Set<String> dict = new HashSet<>(wordList);
+        Map<String, List<String>> map = new HashMap<>();
+
+        for(String temp : wordList)
+            map.putIfAbsent(temp, new ArrayList<>());
+
+        for(int i=0; i< wordList.size(); i++) {
+            for(int j=i+1; j<wordList.size(); j++) {
+                if(diffIsOne(wordList.get(i), wordList.get(j))) {
+                    map.get(wordList.get(i)).add(wordList.get(j));
+                    map.get(wordList.get(j)).add(wordList.get(i));
+                }
+            }
+        }
+
+        int count = 0;
+        Queue<String> queue = new LinkedList<>();
         Set<String> visited = new HashSet<>();
 
-        if(dict.contains(endWord)) return 0;
+        if(!map.containsKey(endWord)) return count;
+
+        if(map.containsKey(beginWord)) {
+            queue.offer(beginWord);
+            count = 1;
+        } else {
+            for(String each: wordList) {
+                if(diffIsOne(each, beginWord)) {
+                    queue.add(each);
+                    visited.add(each);
+                }
+            }
+            count = 2;
+        }
+
+        if(queue.isEmpty()) return 0;
+        if(map.size() == 1) return count;
+
+        while(!queue.isEmpty()) {
+            count++;
+            int size = queue.size();
+            for(int i=0; i< size; i++) {
+                String temp = queue.poll();
+                if(map.get(temp) != null) {
+                    for(String each: map.get(temp)) {
+                        if(each.equals(endWord)) return count;
+                        if(visited.contains(each)) continue;
+                        queue.add(each);
+                        visited.add(each);
+                    }
+                }
+            }
+        }
+        return 0;
+    }
+
+    private boolean diffIsOne(String a, String b) {
+        int count =0;
+
+        int i =0;
+        while( i < a.length() && count <= 1) {
+            if(a.charAt(i) != b.charAt(i))
+                count++;
+            i++;
+        }
+        return count == 1;
+    }
+
+    public int ladderLength2(String beginWord, String endWord, List<String> wordList) {
+        Set<String> visited = new HashSet<>();
+        Set<String> dict = new HashSet<>(wordList);
         Queue<String> queue = new LinkedList<>();
         queue.offer(beginWord);
-
         for(int len=1; !queue.isEmpty(); len++) {
-            for(int i= queue.size(); i>0; i--) {
+            for(int i=queue.size(); i>0; i--) {
                 String temp = queue.poll();
                 if(temp.equals(endWord)) return len;
 
-                for(int j=0;j <temp.length(); j++) {
+                for(int j=0; j< temp.length(); j++) {
                     char[] ch = temp.toCharArray();
-                    for(char c= 'a'; c <= 'z'; c++) {
-                        //if(c == )
+                    for(char c= 'a'; c<='z'; c++) {
+                        if(c == temp.charAt(j)) continue;
+                        ch[j] = c;
+                        String check = String.valueOf(ch);
+                        if(visited.add(check) && dict.contains(check))
+                            queue.offer(check);
                     }
                 }
             }

@@ -62,8 +62,6 @@ class Triple{
  * ab - 1-palindrome, 2-pal
  *
  *  upto 2 chars to make it a palindrome
- *
- *
  *  str abcdcba  k=2
  *
  *  remove upto K char everytime in all combinations of k and then verify if its a aplindrome.
@@ -82,8 +80,6 @@ class Triple{
  *  a bcdb  k=2
  *  a    b
  *  ^
- *       ^
- *
  *
  * a (dcxyz)  b (zyxcd) b  k=2
  *
@@ -102,16 +98,13 @@ class Triple{
  * are-matching case:
  * dp(left, right, remaining) = dp(left + 1, right - 1, remaining)
  *
- *
- *
  *  two choices left || right upto K chars diff
  *   K chars         K chars
- *
  *
  *  3) remove both n check
  *     left+1, right-1
  *
- *  Repeated Subproblems + Optimal Substructure to go for a memoized approach
+ *  Repeated Sub problems + Optimal Substructure to go for a memoized approach
  *
  *  (0,5)
  *
