@@ -2,3 +2,6 @@
 .DS_Store
 out/production/HelloWorld/generated/
 src/.DS_Store
+.gradle
+.idea
+.gradle/

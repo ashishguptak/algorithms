@@ -38,3 +38,28 @@ public class LRUCache {
         map.put(key, value);
     }
 }
+/*
+LRU cache - get and put
+
+get - if exists else -1
+put - for max cap, invalidate the lru item before inserting the new one
+
+O(1) time for both
+
+get and put operations on a map are amortized O(1) time
+
+to support, removing the items which are least recently used, we need to maintian an inherent order for get and put within our DS.
+
+To update the order, whenever get and put are executed on this DS - even the order rearragnement must be O(1)
+
+One way to do is to keep a doubly LinkedList for all items and maintain the insertion/access order by keeping a map for key and node object value.
+
+for get, out it in front of queue - head
+for put, also do the same.
+
+when capacity is reached, the last element in the DS will be the LRU item.
+Maintian a tail reference and then delete the same in O(1) time
+
+LinkedHashMap<> - maintains the order of iteration in which entries were last accessed.
+remove oldest entry func
+ */

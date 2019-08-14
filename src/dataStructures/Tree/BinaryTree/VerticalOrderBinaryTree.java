@@ -5,6 +5,7 @@
 package dataStructures.Tree.BinaryTree;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -16,6 +17,58 @@ import java.util.PriorityQueue;
  * @author ashish gupta (akonda@expedia.com)
  */
 public class VerticalOrderBinaryTree {
+
+    public List<List<Integer>> verticalOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if(root == null) return result;
+
+        List<Node> list = new ArrayList<>();
+        inorder(root, list, 0, 0);
+
+        Collections.sort(list, new Comparator<Node> () {
+            @Override
+            public int compare(Node a, Node b) {
+                if(a.col == b.col && a.row == b.row)
+                    return a.col - b.col;
+                else if(a.col == b.col)
+                    return a.row - b.row;
+                return a.col-b.col;
+            }
+        });
+
+        int prev=list.get(0).col, curr=0;
+        List<Integer> temp = new ArrayList<>();
+        for(Node each: list) {
+            curr = each.col;
+            if(prev != curr) {
+                result.add(temp);
+                temp = new ArrayList<>();
+            }
+            temp.add(each.val);
+            prev = curr;
+        }
+        result.add(temp);
+
+        return result;
+    }
+
+    private void inorder(TreeNode root, List<Node> list, int row, int col) {
+        if(root == null) return;
+
+        list.add(new Node(root.val, row, col));
+        inorder(root.left, list, row+1, col-1);
+        inorder(root.right, list, row+1, col+1);
+    }
+}
+
+class Node {
+    int val;
+    int row; int col;
+    public Node(int val, int row, int col) {
+        this.val = val;
+        this.row = row;
+        this.col = col;
+    }
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();

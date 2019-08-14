@@ -36,7 +36,6 @@ public class InOrderIterativeBinaryTree {
                     temp = temp.left;
                 }
             }
-
             if(stack.size() == 0) break;
 
             temp = stack.pop();

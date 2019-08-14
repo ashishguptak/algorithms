@@ -5,14 +5,26 @@
 package dataStructures.Other;
 
 /**
+ *https://leetcode.com/problems/design-tic-tac-toe/
+ *
+ * initially, I had not read the Hint in the question and came up with an O(n) solution. After reading the extremely helpful hint; a much easier approach became apparent. The key observation is that in order to win Tic-Tac-Toe you must have the entire row or column. Thus, we don't need to keep track of an entire n^2 board. We only need to keep a count for each row and column. If at any time a row or column matches the size of the board then that player has won.
+ *
+ * To keep track of which player, I add one for Player1 and -1 for Player2. There are two additional variables to keep track of the count of the diagonals. Each time a player places a piece we just need to check the count of that row, column, diagonal and anti-diagonal.
+ *
+ * Also see a very similar answer that I believe had beaten me to the punch. We came up with our solutions independently but they are very similar in principle.
+ *
  * @author ashish gupta (akonda@expedia.com)
  */
 class TicTacToe {
-    private int[][] board;
+    private int[] rows;
+    private int[] cols;
+    private int diagonal;
+    private int antiDiagonal;
 
     /** Initialize your data structure here. */
     public TicTacToe(int n) {
-        board = new int[n][n];
+        rows = new int[n];
+        cols = new int[n];
     }
 
     /** Player {player} makes a move at ({row}, {col}).
@@ -24,57 +36,29 @@ class TicTacToe {
      1: Player 1 wins.
      2: Player 2 wins. */
     public int move(int row, int col, int player) {
-        board[row][col] = player;
-        int win = checkWinX();
-        if(win > 0) return win;
-        win = checkWinY();
-        if(win > 0) return win;
-        win = checkWinDiag();
+        int toAdd = player == 1 ? 1 : -1;
 
-        return win;
-    }
-
-    private int checkWinX() {
-        for(int i=0; i< board.length; i++) {
-            for(int j=0; j< board.length; j++) {
-                if(board[i][j] == 0) break;
-                if(board[i][0] != board[i][j]) break;
-                if(j == board.length -1)
-                    return board[i][j];
-            }
+        rows[row] += toAdd;
+        cols[col] += toAdd;
+        if (row == col)
+        {
+            diagonal += toAdd;
         }
+
+        if (col == (cols.length - row - 1))
+        {
+            antiDiagonal += toAdd;
+        }
+
+        int size = rows.length;
+        if (Math.abs(rows[row]) == size ||
+                Math.abs(cols[col]) == size ||
+                Math.abs(diagonal) == size  ||
+                Math.abs(antiDiagonal) == size)
+        {
+            return player;
+        }
+
         return 0;
-    }
-
-    private int checkWinY() {
-        for(int j=0; j< board.length; j++) {
-            for(int i=0; i< board.length; i++) {
-                if(board[i][j] == 0) break;
-                if(board[0][j] != board[i][j]) break;
-                if(i == board.length -1)
-                    return board[i][j];
-            }
-        }
-        return 0;
-    }
-
-    private int checkWinDiag() {
-        for(int i = 1; i< board.length; i++) {
-            if(board[i][i] == 0) break;
-            if(board[0][0] != board[i][i]) break;
-            if(i == board.length -1) return board[0][0];
-        }
-
-        for(int i = 0; i< board.length; i++) {
-            if(board[i][board.length - i - 1] == 0) break;
-            if (board[0][board.length - 1] != board[i][board.length - i - 1]) break;
-            if(i == board.length -1) return board[0][board.length - 1];
-        }
-        return 0;
-    }
-
-    public static void main(String[] args) {
-        String str = null + "SRgsh";
-        System.out.println(str);
     }
 }
